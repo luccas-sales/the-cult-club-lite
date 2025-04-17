@@ -1,0 +1,651 @@
+:root {
+    /* Cores */
+    --color-dark: #222;
+    --color-light: #ddd;
+    --color-primary: #e48a9c;
+    --color-secondary: #d96f83;
+    --color-accent: #eac4b8;
+    --color-success: #02ff2c;
+    --color-success-dark: #008a12;
+    --color-info: #4da6ff;
+    --color-info-dark: #0052cc;
+    --color-danger: #ff4d4d;
+    --color-danger-dark: #b30000;
+    --color-background: rgba(142, 107, 87, 0.3);
+    --color-background-dark: rgba(121, 85, 72, 0.5);
+    --color-text-light: #dbcdba;
+    --color-text-dark: #8e6b57;
+
+    /* Gradientes */
+    --gradient-backgroud: linear-gradient(to bottom, #e48a9c, #d96f83);
+    --gradient-like: linear-gradient(120deg, var(--color-success), var(--color-success-dark));
+    --gradient-share: linear-gradient(120deg, var(--color-info), var(--color-info-dark));
+    --gradient-deslike: linear-gradient(120deg, var(--color-danger), var(--color-danger-dark));
+
+    /* Sombreamentos */
+    --shadow-light: rgba(0, 0, 0, 0.15);
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --shadow-hover: rgba(243, 175, 187, 0.3);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background: var(--gradient-backgroud);
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+#username-container h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 5rem 0 0 5rem;
+    position: fixed;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+    color: var(--color-dark);
+    text-shadow: 0.2rem 0.15rem 0rem var(--shadow-light);
+}
+
+#username-container i {
+    font-size: 3rem;
+}
+
+/* Section Home */
+#home {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+/* Lists */
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+    transition: filter 0.5s ease;
+    opacity: 0.5;
+    filter: blur(0.2rem);
+    width: 25rem;
+    height: auto;
+    border-radius: 1.0rem;
+    padding: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.list a {
+    pointer-events: none;
+}
+
+.selectedList {
+    filter: none;
+    transform: scale(0.8);
+    opacity: 1;
+}
+
+.selectedList a {
+    pointer-events: all;
+}
+
+.list-title {
+    font-family: 'fontclub', serif;
+    color: #fff;
+    text-shadow: -0.2rem 0.2rem 0rem var(--shadow-dark);
+    display: inline-block;
+    position: absolute;
+    top: -12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    opacity: 0;
+}
+
+.selectedList .list-title {
+    transition: top 0.5s ease, opacity 0.5s ease;
+    opacity: 1;
+    top: -6rem;
+}
+
+/* Cards */
+.card-movie,
+.card-serie,
+.card-anime {
+    width: 35rem;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    position: absolute;
+    background-color: var(--color-accent);
+    box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
+    border-radius: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-pic-movie,
+.card-pic-serie,
+.card-pic-anime {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.selectedList .card-pic-movie,
+.selectedList .card-pic-serie,
+.selectedList .card-pic-anime {
+    border-image: fill 0 linear-gradient(#0001, #111);
+    animation: disappear 3s forwards;
+}
+
+@keyframes disappear {
+    0% {
+        border-image: fill 0 linear-gradient(#0001, #111);
+    }
+
+    66.66% {
+        border-image: fill 0 linear-gradient(#0001, #111);
+    }
+
+    100% {
+        border-image: fill 0 linear-gradient(rgba(0, 0, 1, 0), rgba(17, 17, 17, 0));
+    }
+}
+
+.mouse-touch-icon {
+    content: url('https://res.cloudinary.com/thecultclub/image/upload/v1744082781/click-icon_jjp0lv.png');
+    opacity: 0;
+}
+
+.selectedList .mouse-touch-icon {
+    opacity: 1;
+    position: absolute;
+    bottom: 1rem;
+    right: 0.5rem;
+    width: 3.5rem;
+    pointer-events: none;
+    animation: pulseFadeOut 3s ease-in-out forwards;
+}
+
+@keyframes pulseFadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 0.5;
+    }
+
+    66.66% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.selectedList .card-pic-movie:hover,
+.selectedList .card-pic-serie:hover,
+.selectedList .card-pic-anime:hover {
+    cursor: pointer;
+}
+
+.card-movie .name,
+.card-serie .name,
+.card-anime .name {
+    font-size: 1.8rem;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.card-movie .name .release-year,
+.card-serie .name .release-year,
+.card-anime .name .release-year {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    font-weight: bold;
+}
+
+.card-movie .info .synopsis,
+.card-serie .info .synopsis,
+.card-anime .info .synopsis {
+    padding: 0rem 1rem 1rem 0rem;
+    max-height: 7rem;
+    overflow-y: scroll;
+    pointer-events: none;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.selectedList .card-movie .info .synopsis,
+.selectedList .card-serie .info .synopsis,
+.selectedList .card-anime .info .synopsis {
+    pointer-events: all;
+}
+
+.synopsis::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.synopsis::-webkit-scrollbar-thumb {
+    background: var(--color-dark);
+    border-radius: 1rem;
+}
+
+.synopsis::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+.card-movie .info,
+.card-serie .info,
+.card-anime .info {
+    border-radius: 0.5rem;
+    color: var(--color-dark);
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card-movie .info .add-info,
+.card-serie .info .add-info,
+.card-anime .info .add-info {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+    padding: 0.2rem;
+    font-weight: bold;
+    width: 30rem;
+    box-sizing: border-box;
+}
+
+.card-movie .info .add-info span,
+.card-serie .info .add-info span,
+.card-anime .info .add-info span {
+    font-size: 1.2rem;
+}
+
+.card-movie .info .add-info .actors,
+.card-serie .info .add-info .creator,
+.card-anime .info .add-info .studio {
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-movie .imdb-rating,
+.card-serie .imdb-rating,
+.card-anime .imdb-rating {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.card-movie .imdb-star,
+.card-serie .imdb-star,
+.card-anime .imdb-star {
+    width: 2.0rem;
+    height: 2.0rem;
+    background-image: url(https://res.cloudinary.com/thecultclub/image/upload/v1744082781/starIMDB_npah4p.png);
+    background-size: cover;
+    display: inline-block;
+    filter: brightness(0%);
+}
+
+.card-movie:hover,
+.card-serie:hover,
+.card-anime:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1rem 2rem var(--shadow-hover);
+}
+
+/* Navegations Buttons */
+.btns-navegation {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 45rem;
+    position: absolute;
+    filter: drop-shadow(0rem 0rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+#btn-navegation-left,
+#btn-navegation-right {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 5rem;
+}
+
+#btn-navegation-left:active,
+#btn-navegation-right:active {
+    transform: scale(0.8);
+}
+
+/* Cards Buttons Bar */
+.feedback-btns-container {
+    display: inline-block;
+    position: absolute;
+    bottom: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.selectedList .feedback-btns-container {
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    opacity: 1;
+    bottom: -5rem;
+}
+
+.feedback-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.feedback-btns p {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0.2rem 0.3rem 0rem var(--shadow-light);
+}
+
+.feedback-btn {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+    border: none;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+}
+
+.feedback-btn img {
+    width: 2rem;
+    height: 2rem;
+    z-index: 9;
+}
+
+#like-button {
+    background: var(--gradient-like);
+}
+
+#deslike-button {
+    background: var(--gradient-deslike);
+}
+
+
+.feedback-btn:active {
+    transform: scale(0.85);
+    opacity: 0.8;
+}
+
+.feedback-btn::before {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-dark);
+    border-radius: 3.5rem;
+    z-index: -1;
+    border: 0rem solid rgba(255, 255, 255, 0.411);
+    transition: 0.4s;
+}
+
+.feedback-btn:hover::before {
+    width: 0rem;
+    height: 0rem;
+}
+
+/* liked vs Hated Section */
+#liked-vs-hated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    min-height: 100dvh;
+}
+
+.liked-vs-hated-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.liked-list-feedback-title {
+    font-family: 'fontclub', serif;
+    color: #fff;
+    text-shadow: -0.2rem 0.2rem 0rem var(--shadow-dark);
+    display: inline-block;
+    position: absolute;
+    top: -5rem;
+    left: 25%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.hated-list-feedback-title {
+    font-family: 'fontclub', serif;
+    color: #fff;
+    text-shadow: -0.2rem 0.2rem 0rem var(--shadow-dark);
+    display: inline-block;
+    position: absolute;
+    top: -5rem;
+    left: 75%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.feedback-box {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(142, 107, 87, 0.3), rgba(121, 85, 72, 0.5));
+    box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 60rem;
+    height: 50rem;
+    gap: 2rem;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.feedback-box::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.feedback-box::-webkit-scrollbar-thumb {
+    background: var(--color-dark);
+    border-radius: 1rem;
+}
+
+.feedback-box::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+.card-feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-accent);
+    box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 15rem;
+    height: 20rem;
+}
+
+.card-feedback h3 {
+    font-size: 1rem;
+}
+
+.card-feedback p {
+    font-weight: 600;
+}
+
+.card-pic-feedback {
+    width: 13rem;
+    height: 13rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* FeedBack Button */
+#remove-feedback-btn {
+    position: relative;
+    width: 13rem;
+    height: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem var(--shadow-light);
+    background-color: var(--color-text-dark);
+    color: var(--color-text-light);
+}
+
+#remove-feedback-btn,
+#remove-feedback-btn span {
+    transition: 200ms;
+}
+
+#remove-feedback-btn .text {
+    transform: translateX(2.2rem);
+    font-weight: bold;
+}
+
+#remove-feedback-btn .icon {
+    position: absolute;
+    border-left: 0.1rem solid var(--color-text-light);
+    transform: translateX(9rem);
+    height: 1.5rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#remove-feedback-btn svg {
+    margin-top: 0.2rem;
+    width: 1.5rem;
+    fill: var(--color-text-light);
+}
+
+#remove-feedback-btn:hover {
+    background: var(--color-text-light);
+}
+
+#remove-feedback-btn:hover .text {
+    color: transparent;
+}
+
+#remove-feedback-btn:hover .icon {
+    width: 13rem;
+    border-left: none;
+    transform: translateX(0);
+}
+
+#remove-feedback-btn:hover .icon svg {
+    fill: var(--color-text-dark);
+}
+
+#remove-feedback-btn:focus {
+    outline: none;
+}
+
+#remove-feedback-btn:active .icon svg {
+    transform: scale(0.8);
+    fill: var(--color-text-dark);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-dark);
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    color: var(--color-light);
+}
+
+footer a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

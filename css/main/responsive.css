@@ -1,0 +1,72 @@
+@media (max-width: 1200px) {
+
+    .liked-vs-hated-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .liked-list-feedback-title {
+        top: -5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3.5rem;
+        z-index: 1;
+    }
+
+    .hated-list-feedback-title {
+        top: 50rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3.5rem;
+        z-index: 1;
+    }
+}
+
+@media(max-width: 900px) {
+    #home {
+        flex-direction: column;
+        max-height: 200rem;
+    }
+
+    .list {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .selectedList {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .btns-navegation {
+        display: flex;
+    }
+
+    .mouse-touch-icon {
+        content: url('https://res.cloudinary.com/thecultclub/image/upload/v1744082781/touch-icon_xlgivo.png');
+    }
+
+}
+
+@media(max-width: 550px) {
+    .nav-container {
+        transform: scale(0.8);
+    }
+
+    .list {
+        transform: scale(0.6);
+    }
+
+    .btns-navegation {
+        width: 30rem;
+    }
+
+    #btn-navegation-left,
+    #btn-navegation-right {
+        font-size: 4rem;
+    }
+
+    .liked-vs-hated-container {
+        transform: scale(0.7);
+    }
+}

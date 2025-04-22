@@ -21,19 +21,23 @@
     }
 
     .liked-list-feedback-title {
-        top: -5rem;
+        top: -4.5rem;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 3.5rem;
+        font-size: 3rem;
         z-index: 1;
     }
 
     .hated-list-feedback-title {
-        top: 50rem;
+        top: 35.5rem;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 3.5rem;
+        font-size: 3rem;
         z-index: 1;
+    }
+
+    .feedback-box {
+        height: 35rem;
     }
 
     .card-feedback {
@@ -42,12 +46,17 @@
     }
 
     .card-feedback h3 {
+        width: 6rem;
+        font-size: 0.8rem;
+    }
+
+    .card-feedback p {
         font-size: 0.8rem;
     }
 
     .card-pic-feedback {
         width: 10rem;
-        height: rem;
+        height: 10rem;
     }
 
     #remove-feedback-btn {
@@ -99,7 +108,7 @@
 
     .card-pic-feedback {
         width: 6rem;
-        height: rem;
+        height: 6rem;
     }
 
     #remove-feedback-btn {

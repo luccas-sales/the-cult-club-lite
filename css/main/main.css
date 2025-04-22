@@ -49,6 +49,7 @@ body {
 
 section {
     animation: fadeIn 1s ease-in-out;
+    padding: 5rem;
 }
 
 @keyframes fadeIn {
@@ -105,10 +106,9 @@ h2 {
     transition: filter 0.5s ease;
     opacity: 0.5;
     filter: blur(0.2rem);
-    width: 25rem;
-    height: auto;
+    width: 30rem;
+    height: 55rem;
     border-radius: 1.0rem;
-    padding: 1.2rem;
     user-select: none;
     cursor: pointer;
 }
@@ -151,9 +151,11 @@ h2 {
 .card-serie,
 .card-anime {
     width: 35rem;
+    height: 100%;
     display: flex;
     z-index: 1;
     flex-direction: column;
+    justify-content: space-between;
     padding: 2rem;
     gap: 1rem;
     position: absolute;
@@ -470,6 +472,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 85%;
     gap: 2rem;
 }
 
@@ -510,7 +513,7 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 60rem;
+    width: 100%;
     height: 50rem;
     gap: 2rem;
     overflow-y: auto;
@@ -602,6 +605,7 @@ h2 {
 #remove-feedback-btn svg {
     margin-top: 0.2rem;
     width: 1.5rem;
+    height: 100%;
     fill: var(--color-text-light);
 }
 

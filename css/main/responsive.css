@@ -20,7 +20,6 @@
         gap: 5rem;
     }
 
-
     .liked-list-feedback-title {
         top: -5rem;
         left: 50%;
@@ -87,5 +86,40 @@
     #btn-navegation-left,
     #btn-navegation-right {
         font-size: 4rem;
+    }
+
+    .card-feedback {
+        width: 8rem;
+        height: 13rem;
+    }
+
+    .card-feedback h3 {
+        font-size: 0.8rem;
+    }
+
+    .card-pic-feedback {
+        width: 6rem;
+        height: rem;
+    }
+
+    #remove-feedback-btn {
+        width: 6rem;
+        height: 2.5rem;
+    }
+
+    #remove-feedback-btn .text {
+        font-size: 1rem;
+    }
+
+    #remove-feedback-btn .icon {
+        visibility: hidden;
+    }
+
+    #remove-feedback-btn:hover .text {
+        color: var(--color-text-dark);
+    }
+
+    #remove-feedback-btn:active .text {
+        color: var(--color-text-light);
     }
 }

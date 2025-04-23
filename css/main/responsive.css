@@ -132,15 +132,10 @@
         background: var(--color-text-dark);
     }
 
-    #remove-feedback-btn:active .text {
-        color: var(--color-text-dark);
-    }
-
     #remove-feedback-btn:active {
-        background: var(--color-text-light);
+        transform: scale(0.85);
+        opacity: 0.8;
     }
-
-    /* Desativa animações e transições */
 
     .selectedList .list-title {
         transition: none !important;

@@ -379,7 +379,8 @@ h2 {
 
 #btn-navegation-left:active,
 #btn-navegation-right:active {
-    transform: scale(0.8);
+    transform: scale(0.85);
+    opacity: 0.8;
 }
 
 /* Cards Buttons Bar */

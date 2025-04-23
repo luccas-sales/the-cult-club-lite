@@ -1,4 +1,4 @@
-@media(max-width: 1023px) {
+@media(max-width: 1024px) {
     .list {
         visibility: hidden;
     }
@@ -15,113 +15,60 @@
         content: url('https://res.cloudinary.com/thecultclub/image/upload/v1744082781/touch-icon_xlgivo.png');
     }
 
-    .liked-vs-hated-container {
-        flex-direction: column;
-        gap: 5rem;
-    }
-
-    .liked-list-feedback-title {
-        top: -4.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 3rem;
-        z-index: 1;
-    }
-
-    .hated-list-feedback-title {
-        top: 35.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 3rem;
-        z-index: 1;
-    }
-
     .feedback-box {
         height: 35rem;
     }
 
     .card-feedback {
-        width: 12rem;
-        height: 17rem;
+        width: 8rem;
+        height: 13rem;
+        border-radius: 0.5rem;
     }
 
     .card-feedback h3 {
         width: 6rem;
-        font-size: 0.8rem;
-    }
-
-    .card-feedback p {
-        font-size: 0.8rem;
-    }
-
-    .card-pic-feedback {
-        width: 10rem;
-        height: 10rem;
-    }
-
-    #remove-feedback-btn {
-        width: 10rem;
-        height: 2.5rem;
-    }
-
-    #remove-feedback-btn .text {
-        transform: translateX(1rem);
-        font-size: 1.1rem;
-    }
-
-    #remove-feedback-btn .icon {
-        transform: translateX(6.5rem);
-        height: 1rem;
-    }
-
-    #remove-feedback-btn:hover .icon {
-        width: 10rem;
-    }
-
-    #remove-feedback-btn:active .icon svg {
-        transform: scale(0.8);
-    }
-}
-
-@media(max-width: 480px) {
-    .list {
-        transform: scale(0.6);
-    }
-
-    .btns-navegation {
-        width: 30rem;
-    }
-
-    #btn-navegation-left,
-    #btn-navegation-right {
-        font-size: 4rem;
-    }
-
-    .card-feedback {
-        width: 8rem;
-        height: 13rem;
-    }
-
-    .card-feedback h3 {
         font-size: 0.8rem;
     }
 
     .card-pic-feedback {
         width: 6rem;
         height: 6rem;
+        border-radius: 0.25rem;
+    }
+
+    .card-feedback p {
+        font-size: 0.8rem;
     }
 
     #remove-feedback-btn {
         width: 6rem;
-        height: 2.5rem;
+        height: 2rem;
     }
 
     #remove-feedback-btn .text {
+        transform: translateX(0.5rem);
         font-size: 1rem;
     }
 
     #remove-feedback-btn .icon {
-        visibility: hidden;
+        width: 1.2rem;
+        transform: translateX(4.5rem);
+        height: 1rem;
+        border-left: none;
+    }
+
+    #remove-feedback-btn:hover .icon {
+        width: 1.2rem;
+        transform: translateX(4.5rem);
+    }
+
+    #remove-feedback-btn:hover .icon svg {
+        fill: var(--color-text-light);
+    }
+
+    #remove-feedback-btn:active .icon svg {
+        transform: scale(0.8);
+        fill: var(--color-text-light);
     }
 
     #remove-feedback-btn:hover .text {
@@ -135,12 +82,6 @@
     #remove-feedback-btn:active {
         transform: scale(0.85);
         opacity: 0.8;
-    }
-
-    .selectedList .list-title {
-        transition: none !important;
-        top: -6rem !important;
-        opacity: 1 !important;
     }
 
     .card-movie,
@@ -173,15 +114,17 @@
         transition: none !important;
     }
 
+    #like-button::before {
+        background-color: #113311;
+    }
+
+    #deslike-button::before {
+        background-color: #441111;
+    }
+
     .feedback-btn:hover::before {
         width: 4rem !important;
         height: 4rem !important;
-    }
-
-    .selectedList .feedback-btns-container {
-        transition: none !important;
-        opacity: 1 !important;
-        bottom: -5rem !important;
     }
 
     .card-feedback {
@@ -199,4 +142,40 @@
         transition: none !important;
     }
 
+}
+
+@media(max-width: 480px) {
+    #slider {
+        transform: scale(0.35);
+    }
+
+    .btns-navegation {
+        width: 30rem;
+    }
+
+    #btn-navegation-left,
+    #btn-navegation-right {
+        font-size: 4rem;
+    }
+
+    .liked-vs-hated-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .liked-list-feedback-title {
+        top: -4.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        z-index: 1;
+    }
+
+    .hated-list-feedback-title {
+        top: 35.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        z-index: 1;
+    }
 }

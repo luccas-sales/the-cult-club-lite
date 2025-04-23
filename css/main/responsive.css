@@ -125,10 +125,83 @@
     }
 
     #remove-feedback-btn:hover .text {
-        color: var(--color-text-dark);
+        color: var(--color-text-light);
+    }
+
+    #remove-feedback-btn:hover {
+        background: var(--color-text-dark);
     }
 
     #remove-feedback-btn:active .text {
-        color: var(--color-text-light);
+        color: var(--color-text-dark);
     }
+
+    #remove-feedback-btn:active {
+        background: var(--color-text-light);
+    }
+
+    /* Desativa animações e transições */
+
+    .selectedList .list-title {
+        transition: none !important;
+        top: -6rem !important;
+        opacity: 1 !important;
+    }
+
+    .card-movie,
+    .card-serie,
+    .card-anime {
+        transition: none !important;
+    }
+
+    .card-movie:hover,
+    .card-serie:hover,
+    .card-anime:hover {
+        transform: none !important;
+        transition: none !important;
+        box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
+    }
+
+    .card-movie .imdb-star,
+    .card-serie .imdb-star,
+    .card-anime .imdb-star {
+        transition: none !important;
+    }
+
+    .card-movie .imdb-star:hover,
+    .card-serie .imdb-star:hover,
+    .card-anime .imdb-star:hover {
+        transform: none !important;
+    }
+
+    .feedback-btn::before {
+        transition: none !important;
+    }
+
+    .feedback-btn:hover::before {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+
+    .selectedList .feedback-btns-container {
+        transition: none !important;
+        opacity: 1 !important;
+        bottom: -5rem !important;
+    }
+
+    .card-feedback {
+        transition: none !important;
+    }
+
+    .card-feedback:hover {
+        transform: none !important;
+        transition: none !important;
+        box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
+    }
+
+    #remove-feedback-btn,
+    #remove-feedback-btn span {
+        transition: none !important;
+    }
+
 }

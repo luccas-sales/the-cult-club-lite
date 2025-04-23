@@ -25,7 +25,7 @@
     /* Sombreamentos */
     --shadow-light: rgba(0, 0, 0, 0.15);
     --shadow-dark: rgba(0, 0, 0, 0.3);
-    --shadow-hover: rgba(243, 175, 187, 0.3);
+    --shadow-hover: rgba(255, 255, 255, 0.15);
 }
 
 * {
@@ -356,7 +356,7 @@ h2 {
 .card-anime:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 1rem 2rem var(--shadow-hover);
+    box-shadow: 0rem 0.5rem 1rem var(--shadow-hover);
 }
 
 /* Navegations Buttons */
@@ -559,6 +559,13 @@ h2 {
     padding: 1rem;
     width: 15rem;
     height: 20rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-feedback:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0rem 0.5rem 1rem var(--shadow-hover);
 }
 
 .card-feedback h3 {

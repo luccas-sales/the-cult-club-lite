@@ -49,7 +49,7 @@ body {
 
 section {
     animation: fadeIn 1s ease-in-out;
-    padding: 5rem;
+    padding: 5rem 0rem;
 }
 
 @keyframes fadeIn {
@@ -513,7 +513,6 @@ h2 {
 
 .feedback-box {
     position: relative;
-    background: linear-gradient(to bottom, rgba(142, 107, 87, 0.3), rgba(121, 85, 72, 0.5));
     box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
     border-radius: 2rem;
     display: flex;
@@ -525,6 +524,14 @@ h2 {
     gap: 2rem;
     overflow-y: auto;
     padding: 2rem;
+}
+
+#liked-container {
+    background: linear-gradient(to bottom, rgba(152, 179, 152, 0.3), rgba(112, 139, 112, 0.7));
+}
+
+#hated-container {
+    background: linear-gradient(to bottom, rgba(179, 152, 152, 0.3), rgba(139, 112, 112, 0.7));
 }
 
 .feedback-box::-webkit-scrollbar {

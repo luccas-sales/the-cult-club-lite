@@ -338,7 +338,6 @@ h2 {
 }
 
 .card-movie .info .add-info .actors,
-.card-serie .info .add-info .creator,
 .card-anime .info .add-info .studio {
     text-transform: uppercase;
     white-space: nowrap;

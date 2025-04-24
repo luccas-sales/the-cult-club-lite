@@ -76,6 +76,7 @@ h2 {
     align-items: center;
     min-height: 100dvh;
     position: relative;
+    overflow: hidden;
 }
 
 #username-container h2 {

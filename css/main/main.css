@@ -538,10 +538,10 @@ h2 {
     flex-wrap: wrap;
     width: 100%;
     height: 50rem;
-    gap: 2rem;
+    gap: 1.5rem;
     overflow-x: hidden;
     overflow-y: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
 }
 
 #liked-container {

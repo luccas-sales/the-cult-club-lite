@@ -607,8 +607,8 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'Mr. Robot',
       year: '2015-2019',
       synopsis:
-        'A brilliant but troubled hacker is recruited by an underground group to take down corrupt corporations. As he battles inner demons and digital threats, reality begins to fracture in a mind-bending game of control.',
-      creator: 'Sam Esmail',
+        'A brilliant but troubled hacker is recruited by an underground group to take down corrupt corporations. As his reality begins to blur, he struggles with identity, morality, and mental illness in a world of digital warfare and hidden agendas.',
+      actors: 'Rami M. • Christian S. • Carly C.',
       duration: '40-45',
       imdb: 8.5,
       image:
@@ -619,8 +619,8 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'Hannibal',
       year: '2013-2015',
       synopsis:
-        'A gifted FBI profiler forms a dark bond with a charming psychiatrist—who secretly hides a monstrous appetite. As murder cases unfold, their twisted connection threatens to consume them both in a psychological spiral.',
-      creator: 'Bryan Fuller',
+        'FBI profiler Will Graham partners with psychiatrist Dr. Hannibal Lecter to solve gruesome crimes, unaware Lecter is secretly a cannibalistic killer. A dark psychological game unfolds as their bond deepens in chilling and disturbing ways.',
+      actors: 'Mads M. • Hugh D. • Laurence F.',
       duration: '40-45',
       imdb: 8.5,
       image:
@@ -631,8 +631,8 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'You',
       year: '2018-2025',
       synopsis:
-        'A charming bookstore clerk hides a deadly obsession, using technology and manipulation to get close to the ones he desires. As love turns to fixation, nothing—and no one—is safe from his deadly devotion.',
-      creator: 'Greg B. • Sera G.',
+        'A charming but dangerously obsessive man uses technology and manipulation to insert himself into the lives of the women he loves. As he spirals deeper into obsession, his twisted sense of romance leaves destruction in his wake.',
+      actors: 'Penn B. • Victoria P. • Elizabeth L.',
       duration: '40-50',
       imdb: 7.7,
       image:
@@ -643,9 +643,9 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'The Rain',
       year: '2018-2020',
       synopsis:
-        'After a deadly virus wipes out most of Scandinavia, two siblings emerge from a bunker into a deserted world. As they search for safety and answers, they join other survivors in a journey filled with danger and hope.',
-      creator: 'Jannik T. M. • Esben T. J. • Christian P.',
-      duration: '35-50',
+        'Years after a deadly virus carried by rainfall wipes out much of Scandinavia, two siblings join a group of survivors in search of safety. As they travel through a ravaged world, they uncover dark secrets about the virus and themselves.',
+      actors: 'Alba A. • Lucas L. • Mikkel F.',
+      duration: '40-50',
       imdb: 6.3,
       image:
         'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088719/theRain_ms7g2p.jpg',
@@ -655,13 +655,421 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'The Big Bang Theory',
       year: '2007-2019',
       synopsis:
-        'A group of brilliant but socially awkward scientists see their world upended when a free-spirited neighbor moves in. Through science, sarcasm, and sitcom mayhem, friendships evolve in the quirkiest ways imaginable.',
-      creator: 'Chuck L. • Bill P.',
-      duration: '18-25',
+        'A group of socially awkward scientists navigate friendships, relationships, and pop culture in hilarious ways. As they grow personally and professionally, their geeky antics and witty banter redefine the dynamics of modern sitcoms.',
+      actors: 'Jim P. • Johnny G. • Kaley C.',
+      duration: '20-22',
       imdb: 8.1,
       image:
         'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088763/theBigBangTheory_tamhjp.jpg',
       imdbLink: 'https://www.imdb.com/title/tt0898266/',
+    },
+    {
+      title: 'Severance',
+      year: '2022-',
+      synopsis:
+        'In a mysterious corporation, employees undergo a procedure that separates work memories from personal ones. When the lines between both worlds blur, a gripping mystery unfolds around identity, free will, and corporate control.',
+      actors: 'Adam S. • Britt L. • Patricia A.',
+      duration: '45-50',
+      imdb: 8.7,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/severance_ftdvxr.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt11280740/',
+    },
+    {
+      title: 'The Penguin',
+      year: '2024',
+      synopsis:
+        "After Gotham descends into chaos, Oswald Cobblepot—better known as The Penguin—rises through the criminal ranks. In a gritty battle for power, he faces betrayal, ambition, and his own dark legacy in the wake of Batman's absence.",
+      actors: 'Colin F. • Cristin M. • Clancy B.',
+      duration: '50-60',
+      imdb: 8.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/thePenguin_vhtwu5.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt15435876/',
+    },
+    {
+      title: 'Peacemaker',
+      year: '2022-',
+      synopsis:
+        'After the events of The Suicide Squad, Peacemaker joins a covert black ops team to maintain peace at any cost—even if it means killing for it. His journey challenges his beliefs as he confronts his past and questions his brutal methods.',
+      actors: 'John C. • Danielle B. • Freddie S.',
+      duration: '39-46',
+      imdb: 8.3,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/peacemaker_toqswn.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt13146488/',
+    },
+    {
+      title: 'The Sopranos',
+      year: '1999-2007',
+      synopsis:
+        'Tony Soprano, a mob boss juggling criminal duties and family life, seeks therapy to cope with anxiety. As he navigates betrayal, violence, and power, his dual life threatens to collapse in this groundbreaking psychological crime drama.',
+      actors: 'James G. • Edie F. • Lorraine B.',
+      duration: '50-60',
+      imdb: 9.2,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theSopranos_rhhfwu.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0141842/',
+    },
+    {
+      title: 'Breaking Bad',
+      year: '2008-2013',
+      synopsis:
+        'A high school chemistry teacher turns to cooking meth after a cancer diagnosis. As he descends into the drug underworld, he transforms into a ruthless figure, risking everything for power, pride, and a twisted sense of legacy.',
+      actors: 'Bryan C. • Aaron P. • Anna G.',
+      duration: '45-50',
+      imdb: 9.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/breakingBad_iirqzz.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0903747/',
+    },
+    {
+      title: 'Better Call Saul',
+      year: '2015-2022',
+      synopsis:
+        'Before he became Saul Goodman, Jimmy McGill was a small-time lawyer with big ambitions. This prequel to Breaking Bad explores his morally complex path, full of cons, heart, and tragedy, toward becoming the criminal lawyer we know.',
+      actors: 'Bob O. • Rhea S. • Jonathan B.',
+      duration: '45-55',
+      imdb: 9.0,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/betterCallSaul_qu0xck.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt3032476/',
+    },
+    {
+      title: 'Dune: Prophecy',
+      year: '2024-',
+      synopsis:
+        'Set long before the rise of Paul Atreides, this series follows the origins of the Bene Gesserit. As political and spiritual tensions rise across the galaxy, the sisterhood’s secretive influence grows in a deadly quest for power.',
+      actors: 'Emily W. • Olivia W. • Travis F.',
+      duration: '50-60',
+      imdb: 7.3,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/duneProphecy_etkawb.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt10466872/',
+    },
+    {
+      title: 'Game of Thrones',
+      year: '2011-2019',
+      synopsis:
+        'Noble families clash for control of the Iron Throne in a sprawling fantasy world where loyalty is fragile and winter is always coming. Dragons, betrayal, and ambition drive this epic saga of power, bloodlines, and destiny.',
+      actors: 'Emilia C. • Kit H. • Peter D.',
+      duration: '50-60',
+      imdb: 9.2,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/gameOfThrones_ety8wm.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0944947/',
+    },
+    {
+      title: 'The Last of Us',
+      year: '2023-',
+      synopsis:
+        'After a fungal outbreak decimates humanity, a hardened survivor escorts a mysterious young girl across a post-apocalyptic America. Their bond deepens as they face monstrous threats and the haunting cost of survival.',
+      actors: 'Pedro P. • Bella R. • Anna T.',
+      duration: '45-60',
+      imdb: 8.7,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theLastOfUs_xucuic.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt3581920/',
+    },
+    {
+      title: 'The Office',
+      year: '2005-2013',
+      synopsis:
+        'A mockumentary about the mundane yet hilarious lives of office workers at Dunder Mifflin. With awkward romances, quirky coworkers, and absurd moments, it’s a heartwarming and comical dive into everyday corporate chaos.',
+      actors: 'Steve C. • Rainn W. • John K.',
+      duration: '22-25',
+      imdb: 9,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theOffice_h43yes.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0386676/',
+    },
+    {
+      title: 'Cobra Kai',
+      year: '2018-2025',
+      synopsis:
+        'Decades after the events of Karate Kid, Johnny Lawrence reopens Cobra Kai dojo, reigniting his rivalry with Daniel LaRusso. Old grudges and new students collide in a fierce battle of philosophies, legacy, and redemption.',
+      actors: 'Ralph M. • William Z. • Xolo M.',
+      duration: '30-40',
+      imdb: 8.4,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/cobraKai_rasvs0.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt7221388/',
+    },
+    {
+      title: 'Dark',
+      year: '2017-2020',
+      synopsis:
+        'In a small German town, the disappearance of a boy uncovers a time-travel conspiracy spanning generations. Families are connected in haunting ways as past, present, and future collide in this mind-bending sci-fi thriller.',
+      actors: 'Louis H. • Lisa V. • Andreas P.',
+      duration: '45-55',
+      imdb: 8.7,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/dark_mtqe1h.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt5753856/',
+    },
+    {
+      title: 'Adolescence',
+      year: '2025',
+      synopsis:
+        'A raw exploration of teenage life, where identity, love, trauma, and rebellion intertwine. As emotions intensify, the characters struggle to find meaning and belonging in a world that feels both intimate and overwhelming.',
+      actors: 'Owen C. • Stephen G. • Erin D.',
+      duration: '51–65',
+      imdb: 8.2,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/adolescence_v4eae2.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt31806037/',
+    },
+    {
+      title: 'Atlanta',
+      year: '2016-2022',
+      synopsis:
+        "Earn and his cousin Paper Boi try to make it in Atlanta's rap scene, navigating fame, race, and surreal situations. The show blends sharp social commentary with dark humor, creating a unique and unpredictable cultural lens.",
+      actors: 'Donald G. • Brian T. H. • Lakeith S.',
+      duration: '25-35',
+      imdb: 8.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/atlanta_diqvrk.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt4288182/',
+    },
+    {
+      title: 'Cowboy Bebop',
+      year: '2021',
+      synopsis:
+        'In a stylish space-western future, bounty hunters Spike, Jet, and Faye chase criminals across the solar system. Beneath their cool exteriors lie deep scars, as the crew of the Bebop confronts the pasts they can’t outrun.',
+      actors: 'John C. • Mustafa S. • Daniella P.',
+      duration: '35-45',
+      imdb: 6.7,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/cowboyBebop_cawutq.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt1267295/',
+    },
+    {
+      title: 'Black Mirror',
+      year: '2011-2019',
+      synopsis:
+        'A chilling anthology that explores the dark side of technology and human nature. Each standalone episode presents a near-future scenario where innovation collides with moral decay, often with shocking and thought-provoking results.',
+      actors: 'Bryce D. • Jesse P. • Hayley A.',
+      duration: '40-60',
+      imdb: 8.8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/blackMirror_pbybpe.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt2085059/',
+    },
+    {
+      title: 'Stranger Things',
+      year: '2016-2024',
+      synopsis:
+        'When a boy vanishes, his friends uncover a government experiment, a telekinetic girl, and a parallel dimension called the Upside Down. With ‘80s nostalgia and supernatural terror, the town of Hawkins becomes ground zero for mystery.',
+      actors: 'Millie B. • Finn W. • David H.',
+      duration: '45-60',
+      imdb: 8.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/strangerThings_fi1n0i.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt4574334/',
+    },
+    {
+      title: 'Narcos',
+      year: '2015-2017',
+      synopsis:
+        'Follow the real-life rise and fall of drug kingpins like Pablo Escobar in this gripping crime drama. As law enforcement races to stop the growing cartels, power, greed, and violence reshape the world of the drug trade.',
+      actors: 'Wagner M. • Pedro P. • Boyd H.',
+      duration: '45-55',
+      imdb: 8.7,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524228/d12423e338722a169b879194bbd0d873_uqhede.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt2707408/',
+    },
+    {
+      title: 'The Witcher',
+      year: '2019-',
+      synopsis:
+        'Geralt of Rivia, a monster hunter with a mysterious past, navigates a dark fantasy world filled with war, magic, and mutated beasts. Fate ties him to a powerful child and a sorceress as chaos threatens the Continent.',
+      actors: 'Henry C. • Anya C. • Freya A.',
+      duration: '45-60',
+      imdb: 7.9,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theWitcher_c00wii.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt5180504/',
+    },
+    {
+      title: 'The Crown',
+      year: '2016-2023',
+      synopsis:
+        'A dramatized chronicle of Queen Elizabeth II’s reign, revealing the personal and political challenges behind the British monarchy. As the world changes, the royal family grapples with duty, scandal, and the weight of tradition.',
+      actors: 'Claire F. • Olivia C. • Imelda S.',
+      duration: '50-60',
+      imdb: 8.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/theCrown_ctw4tx.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt4786824/',
+    },
+    {
+      title: 'Sherlock',
+      year: '2010-2017',
+      synopsis:
+        'A modern twist on the classic detective, Sherlock Holmes uses brilliant deduction and tech-savvy methods to solve London’s toughest crimes. Alongside Dr. Watson, he faces deadly foes and unravels mind-bending mysteries.',
+      actors: 'Benedict C. • Martin F. • Andrew S.',
+      duration: '85-90',
+      imdb: 9.1,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/sherlock_ep9tts.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt1475582/',
+    },
+    {
+      title: 'Fargo',
+      year: '2014-2024',
+      synopsis:
+        'Inspired by the Coen Brothers’ film, each season delivers a new tale of crime and morality in the Midwest. Ordinary people are drawn into extraordinary violence, revealing how far they’ll go when pushed to the edge.',
+      actors: 'Billy B. • Kirsten D. • Ewan M.',
+      duration: '50-60',
+      imdb: 8.8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/fargo_wq7kuz.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt2802850/',
+    },
+    {
+      title: 'The Boys',
+      year: '2019-',
+      synopsis:
+        'In a world where superheroes are corrupted by fame and power, a vigilante group known as The Boys fights to expose them. Brutal, satirical, and darkly funny, the show dismantles the myth of heroism one bloody punch at a time.',
+      actors: 'Karl U. • Jack Q. • Antony S.',
+      duration: '55-60',
+      imdb: 8.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/theBoys_thihso.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt1190634/',
+    },
+    {
+      title: 'Loki',
+      year: '2021-2023',
+      synopsis:
+        'After stealing the Tesseract, Loki finds himself caught by the Time Variance Authority. As timelines unravel, he faces alternate versions of himself and must confront who he is—and what kind of god he truly wants to be.',
+      actors: 'Tom H. • Owen W. • Sophia D.M.',
+      duration: '40-50',
+      imdb: 8.2,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/loki_p1ro5m.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt9140554/',
+    },
+    {
+      title: 'The Umbrella Academy',
+      year: '2019-2024',
+      synopsis:
+        'Adopted by an eccentric billionaire, seven superpowered siblings reunite to stop an impending apocalypse. Dysfunctional and quirky, they face time travel, family trauma, and wild twists in this chaotic superhero tale.',
+      actors: 'Elliot P. • Tom H. • Emmy R.L.',
+      duration: '45-60',
+      imdb: 7.8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theUmbrellaAcademy_w90cj4.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt1312171/',
+    },
+    {
+      title: 'La Casa de Papel',
+      year: '2017-2021',
+      synopsis:
+        'A criminal mastermind recruits a team to execute a perfect heist on Spain’s Royal Mint. As the plan unfolds, loyalties are tested and emotions rise, turning the robbery into a high-stakes psychological and political drama.',
+      actors: 'Álvaro M. • Úrsula C. • Pedro A.',
+      duration: '40-50',
+      imdb: 8.2,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/laCasaDePapel_wnlngw.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt6468322/',
+    },
+    {
+      title: 'The Handmaid’s Tale',
+      year: '2017-2025',
+      synopsis:
+        'In a dystopian future where fertility is rare, women are forced into servitude by a theocratic regime. Offred fights to survive and resist, clinging to hope, identity, and the memory of the life she once had.',
+      actors: 'Elisabeth M. • Yvonne S. • Joseph F.',
+      duration: '50-60',
+      imdb: 8.3,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/theHandmaidsTale_semgrm.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt5834204/',
+    },
+    {
+      title: 'Peaky Blinders',
+      year: '2013-2022',
+      synopsis:
+        'After WWI, the Shelby crime family rises in Birmingham, England, led by the ambitious and ruthless Tommy Shelby. Power, betrayal, and violence define their journey as they build an empire in a volatile world.',
+      actors: 'Cillian M. • Paul A. • Helen M.',
+      duration: '55-60',
+      imdb: 8.7,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/peakyBlinders_ugyikl.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt2442560/',
+    },
+    {
+      title: 'Dexter',
+      year: '2006-2013',
+      synopsis:
+        'By day, Dexter is a forensic expert for Miami PD. By night, he’s a meticulous serial killer who targets other killers. Torn between his dark urges and a desire for normalcy, he walks a razor-thin moral line.',
+      actors: 'Michael C. H. • Jennifer C. • David Z.',
+      duration: '50-55',
+      imdb: 8.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/dexter_a5dtqt.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0773262/',
+    },
+    {
+      title: 'Pose',
+      year: '2018-2021',
+      synopsis:
+        'Set in 1980s and ’90s New York, Pose explores the vibrant world of ballroom culture, highlighting LGBTQ+ communities and the impact of the AIDS crisis. It’s a powerful celebration of identity, resilience, and chosen family.',
+      actors: 'Mj R. • Billy P. • Dominique J.',
+      duration: '45-60',
+      imdb: 8.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/pose_niqzbk.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt7562112/',
+    },
+    {
+      title: 'The Punisher',
+      year: '2017-2019',
+      synopsis:
+        'After his family is murdered, Frank Castle becomes the Punisher, waging a brutal war on crime. Driven by vengeance and haunted by trauma, he dismantles corrupt systems with lethal precision and unflinching resolve.',
+      actors: 'Jon B. • Ben B. • Amber R.',
+      duration: '50-55',
+      imdb: 8.4,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/thePunisher_zt4iju.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt5675620/',
+    },
+    {
+      title: 'Bates Motel',
+      year: '2013-2017',
+      synopsis:
+        "A modern prequel to Psycho, the series explores Norman Bates' descent into madness. As he and his mother Norma navigate secrets, murder, and mental illness, a chilling transformation begins in their sleepy motel.",
+      actors: 'Freddie H. • Vera F. • Max T.',
+      duration: '40-45',
+      imdb: 8.1,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/batesMotel_fnn4p6.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt2188671/',
+    },
+    {
+      title: 'WandaVision',
+      year: '2021',
+      synopsis:
+        'Wanda Maximoff and Vision live an idyllic suburban life—until cracks appear in their reality. As their perfect world unravels, Wanda must confront grief, power, and the consequences of bending reality to her will.',
+      actors: 'Elizabeth O. • Paul B. • Kathryn H.',
+      duration: '30-40',
+      imdb: 7.9,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524223/wandaVision_jj81rl.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt9140560/',
+    },
+    {
+      title: 'Hilda Hurricane',
+      year: '1998',
+      synopsis:
+        "Set in the turbulent world of 1950s Brazil, 'Hilda Hurricane' follows the life of Hilda, a young woman who rises from poverty to become a powerful figure in Rio de Janeiro’s nightlife. As she navigates love, betrayal, and ambition, Hilda grapples with the cost of her desires.",
+      actors: 'Ana P. • Rodrigo S. • Stênio G.',
+      duration: '45-50',
+      imdb: 8.2,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/hildaHurricane_y09wjx.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0163450/',
     },
   ];
 
@@ -738,7 +1146,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088720/deathNote_qaynvl.jpg',
       imdbLink: 'https://www.imdb.com/title/tt0877057/',
     },
-
     {
       title: 'Tokyo Ghoul',
       year: '2014-2018',
@@ -751,7 +1158,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088794/tokyoGhoul_mq08ui.jpg',
       imdbLink: 'https://www.imdb.com/title/tt3741634/',
     },
-
     {
       title: 'Dan Da Dan',
       year: '2024-',
@@ -764,7 +1170,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088717/danDaDan_zsn9nl.jpg',
       imdbLink: 'https://www.imdb.com/title/tt30217403/',
     },
-
     {
       title: 'Bleach',
       year: '2004-2023',
@@ -777,7 +1182,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088762/bleach_t0ymlg.jpg',
       imdbLink: 'https://www.imdb.com/title/tt0434665/',
     },
-
     {
       title: 'cyberpunk: Edgerunners',
       year: '2022',
@@ -789,6 +1193,517 @@ document.addEventListener('DOMContentLoaded', function () {
       image:
         'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088730/cyberpunkEdgerunners_jik4nv.jpg',
       imdbLink: 'https://www.imdb.com/title/tt12590266/',
+    },
+    {
+      title: 'Akira',
+      year: '1988',
+      synopsis:
+        'In a dystopian Neo-Tokyo, biker Kaneda gets drawn into a military secret when his friend Tetsuo gains destructive psychic powers. As chaos rises, Kaneda must confront both government conspiracies and the explosive force his friend becomes.',
+      studio: 'Tokyo Movie Shinsha',
+      duration: '124',
+      imdb: 8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088732/akira_blckmp.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0094625/',
+    },
+    {
+      title: 'Ghost in the Shell',
+      year: '1995',
+      synopsis:
+        'Cyborg agent Major Kusanagi hunts a mysterious hacker known as the Puppet Master in a high-tech future. As the lines between human and machine blur, she questions her identity, purpose, and what it truly means to have a soul.',
+      studio: 'Production I.G',
+      duration: '23-24',
+      imdb: 7.9,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088809/ghostInTheShell_e9t5hs.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0113568/',
+    },
+    {
+      title: 'Cowboy Bebop',
+      year: '1998-1999',
+      synopsis:
+        'A ragtag crew of bounty hunters—Spike, Jet, Faye, Ed, and Ein—drift through space on the Bebop chasing criminals and running from their pasts. Stylish, soulful, and packed with action, their journey is a mix of jazz and melancholy.',
+      studio: 'Sunrise',
+      duration: '23-24',
+      imdb: 8.9,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088715/cowboyBebop_zex6np.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0213338/',
+    },
+    {
+      title: 'Neon Genesis Evangelion',
+      year: '1995-1996',
+      synopsis:
+        'Teenager Shinji is recruited to pilot a giant robot and protect Earth from monstrous beings known as Angels. But beneath the battles lie deep psychological trauma, religious symbolism, and humanity’s desperate struggle to survive.',
+      studio: 'Gainax • Tatsunoko Production',
+      duration: '23-24',
+      imdb: 8.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088733/neonGenesisEvangelion_trcek5.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0112159/',
+    },
+    {
+      title: "Jojo's Bizarre Adventure",
+      year: '2012-',
+      synopsis:
+        'Generations of the Joestar family face supernatural foes using unique powers called Stands. From Victorian England to modern Japan, this epic saga blends flamboyant style, wild action, and dramatic family legacies.',
+      studio: 'David Production',
+      duration: '23-24',
+      imdb: 8.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088731/jojosBizarreAdventure_ma8ilq.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt2359704/',
+    },
+    {
+      title: 'Naruto',
+      year: '2002-2007',
+      synopsis:
+        'Naruto Uzumaki, a young ninja with a sealed demon fox inside him, dreams of becoming Hokage to gain the village’s respect. With determination and powerful bonds, he faces dangerous enemies and learns the true strength of friendship.',
+      studio: 'Studio Pierrot',
+      duration: '23-24',
+      imdb: 8.4,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088733/naruto_ivmjis.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0409591/',
+    },
+
+    {
+      title: 'Dragon Ball Z',
+      year: '1996-2003',
+      synopsis:
+        "Earth's greatest warrior, Goku, defends the planet against powerful foes—from space tyrants to androids. With epic battles, Saiyan transformations, and fierce loyalty, DBZ redefined action anime for generations to come.",
+      studio: 'Toei Animation',
+      duration: '23-24',
+      imdb: 8.8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088719/dragonBallZ_jlp8iv.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0214341/',
+    },
+
+    {
+      title: 'Jujutsu Kaisen',
+      year: '2020-',
+      synopsis:
+        'Yuji Itadori swallows a cursed finger to save his friends, becoming host to a powerful demon. Enrolled in a secret sorcery school, he battles deadly curses while uncovering a dark world of magic, monsters, and moral complexity.',
+      studio: 'MAPPA',
+      duration: '23-24',
+      imdb: 8.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088792/jujutsuKaisen_iz8hc0.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt12343534/',
+    },
+
+    {
+      title: 'Castlevania',
+      year: '2017-2021',
+      synopsis:
+        'Monster hunter Trevor Belmont, a sorceress, and a vampire forge an uneasy alliance to battle Dracula, who seeks revenge on humanity. Based on the video game, this gothic tale is bloody, emotional, and deeply atmospheric.',
+      studio: 'Powerhouse Animation Studios',
+      duration: '23-25',
+      imdb: 8.3,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088729/castlevania_mz20dr.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt6517102/',
+    },
+
+    {
+      title: 'Dr. Stone',
+      year: '2019-',
+      synopsis:
+        'After humanity is mysteriously petrified, genius teen Senku wakes up thousands of years later. Using science and wit, he vows to rebuild civilization from scratch, one invention at a time, in a thrilling blend of brains and survival.',
+      studio: 'TMS Entertainment',
+      duration: '23-24',
+      imdb: 8.1,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088762/drStone_xegpzt.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt9679542/',
+    },
+
+    {
+      title: 'Hunter x Hunter',
+      year: '2011-2014',
+      synopsis:
+        'Gon Freecss becomes a Hunter to find his absent father and explore the world. Alongside friends Killua, Leorio, and Kurapika, he faces dangerous trials, complex villains, and moral dilemmas that challenge what it means to be strong.',
+      studio: 'Madhouse',
+      duration: '23-24',
+      imdb: 9.0,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088728/hunterXHunter_f8jee2.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt2098220/',
+    },
+
+    {
+      title: 'Demon Slayer',
+      year: '2019-',
+      synopsis:
+        'After his family is slaughtered and his sister turned into a demon, Tanjiro joins the Demon Slayer Corps. With a burning will and blade in hand, he battles powerful demons to avenge his family and save his sister’s humanity.',
+      studio: 'ufotable',
+      duration: '23-24',
+      imdb: 8.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088765/demonSlayer_hezs0q.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt9335498/',
+    },
+
+    {
+      title: 'Mob Psycho 100',
+      year: '2016-2022',
+      synopsis:
+        'Shigeo “Mob” Kageyama is a powerful psychic trying to live a normal life. But when emotions run high, so does his power. Torn between self-control and overwhelming force, Mob must discover who he truly wants to be.',
+      studio: 'Bones',
+      duration: '23-24',
+      imdb: 8.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088764/mobPsycho100_bqq5dj.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt5897304/',
+    },
+
+    {
+      title: 'Tenkû Shinpan',
+      year: '2021',
+      synopsis:
+        'Trapped in a world of towering skyscrapers and masked killers, high schooler Yuri fights to survive. As she searches for her brother and the truth, she faces brutal choices in a deadly game ruled by chaos and control.',
+      studio: 'Zero-G',
+      duration: '23-24',
+      imdb: 6.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088728/highRiseInvasion_cl7nn8.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt13352232/',
+    },
+
+    {
+      title: 'One Punch Man',
+      year: '2015-',
+      synopsis:
+        'Saitama’s unmatched strength lets him defeat any foe with a single punch—leaving him bored and unfulfilled. In a world full of monsters and heroes, he searches for meaning, excitement, and a true challenge worthy of his power.',
+      studio: 'Madhouse • J.C.Staff',
+      duration: '23-24',
+      imdb: 8.7,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088734/onePunchMan_yfooqf.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt4508902/',
+    },
+    {
+      title: 'Vinland Saga',
+      year: '2019-2023',
+      synopsis:
+        'Thorfinn, a young Viking warrior, seeks revenge on the man who killed his father. Amid brutal battles and shifting allegiances, he grapples with the meaning of honor, vengeance, and the pursuit of a true paradise—Vinland.',
+      studio: 'Wit Studio • MAPPA',
+      duration: '23-24',
+      imdb: 8.8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088764/vinlandSaga_e7dr82.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt10233448/',
+    },
+
+    {
+      title: 'Baki',
+      year: '2016-2020',
+      synopsis:
+        'Baki Hanma trains relentlessly to surpass his monstrous father, the strongest fighter alive. Facing deadly martial artists from around the world, Baki battles through brutal underground matches fueled by pain, pride, and raw power.',
+      studio: 'TMS Entertainment',
+      duration: '23-24',
+      imdb: 6.8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088716/baki_c4kvhh.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt6357658/',
+    },
+
+    {
+      title: 'Yu-Gi-Oh!',
+      year: '2000-2006',
+      synopsis:
+        'Yugi, a shy teen, awakens the spirit of an ancient Pharaoh through a mystical puzzle. Together, they face shadow games and sinister opponents in high-stakes duels, where every card could mean victory—or total defeat.',
+      studio: 'Studio Gallop',
+      duration: '23-24',
+      imdb: 7.3,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088794/yuGiOh_jw61vn.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0249327/',
+    },
+
+    {
+      title: 'Pokémon',
+      year: '1997-2023',
+      synopsis:
+        'Aspiring Pokémon Master Ash Ketchum travels the world with Pikachu and friends to catch creatures, win battles, and earn badges. Along the way, he learns about friendship, perseverance, and the heart behind every Poké Ball.',
+      studio: 'OLM',
+      duration: '23-24',
+      imdb: 7.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088734/pokemon_kbfkd8.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0168366/',
+    },
+
+    {
+      title: 'Black Clover',
+      year: '2017-2021',
+      synopsis:
+        'In a world where magic defines everything, Asta is born without any. With sheer will and a mysterious anti-magic grimoire, he vows to become the Wizard King, defying fate in an epic tale of rivalry, power, and unbreakable dreams.',
+      studio: 'Studio Pierrot',
+      duration: '23-24',
+      imdb: 8.2,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088718/blackClover_yj7lce.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt7441658/',
+    },
+
+    {
+      title: 'My Hero Academia',
+      year: '2016-',
+      synopsis:
+        'In a world where superpowers are the norm, Izuku Midoriya is born powerless—but dreams of becoming a hero. After inheriting a legendary Quirk, he joins U.A. High to train and fight alongside classmates against rising villain threats.',
+      studio: 'Bones',
+      duration: '23-24',
+      imdb: 8.2,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088764/myHeroAcademia_pvocij.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt5626028/',
+    },
+
+    {
+      title: 'Fire Force',
+      year: '2019-',
+      synopsis:
+        'Spontaneous human combustion turns people into fire demons. Shinra, a pyrokinetic with a hero complex, joins Special Fire Force Company 8 to uncover the mystery behind these infernos and his family’s tragic past.',
+      studio: 'David Production',
+      duration: '23-24',
+      imdb: 7.6,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088719/fireForce_nqziz2.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt9307686/',
+    },
+
+    {
+      title: 'Tokyo Revengers',
+      year: '2021-',
+      synopsis:
+        'Takemichi, a 26-year-old loser, travels back to his school days to save his ex-girlfriend from a deadly gang future. With each jump through time, he rewrites fate, fighting to change the dark path of Tokyo’s underworld.',
+      studio: 'Liden Films',
+      duration: '23-24',
+      imdb: 7.8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088762/tokyoRevengers_n6a8dn.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt13196080/',
+    },
+
+    {
+      title: 'Samurai Champloo',
+      year: '2004-2005',
+      synopsis:
+        'A brash samurai, a calm ronin, and a spunky waitress journey across Edo-era Japan in search of a samurai who smells of sunflowers. With hip-hop beats and slick swordfights, their wild adventure blends the old with the new.',
+      studio: 'Manglobe',
+      duration: '23-24',
+      imdb: 8.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088793/samuraiChamploo_szunj8.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0423731/',
+    },
+
+    {
+      title: 'Fullmetal Alchemist',
+      year: '2003-2004',
+      synopsis:
+        'Brothers Edward and Alphonse Elric use forbidden alchemy to resurrect their mother—at a terrible cost. Now they seek the Philosopher’s Stone to restore their bodies, facing corruption, war, and deep truths about sacrifice.',
+      studio: 'Bones',
+      duration: '23-24',
+      imdb: 8.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088735/fullmetalAlchemist_lkql9s.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0421357/',
+    },
+    {
+      title: 'Initial D: First Stage',
+      year: '1998',
+      synopsis:
+        'Takumi Fujiwara, a high schooler with unmatched drifting skills, unknowingly becomes a street racing legend. Behind the wheel of his father’s Toyota AE86, he conquers mountain passes and rivals in an adrenaline-fueled road saga.',
+      studio: 'Gallop • Studio Comet',
+      duration: '23-24',
+      imdb: 8.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088729/initialD_pbv0ob.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0385426/',
+    },
+
+    {
+      title: 'Sailor Moon',
+      year: '1992-1997',
+      synopsis:
+        'Usagi Tsukino transforms into Sailor Moon to fight evil and protect the universe. With fellow Sailor Guardians, she battles dark forces, discovers her destiny, and embraces love and friendship in a magical girl classic.',
+      studio: 'Toei Animation',
+      duration: '23-24',
+      imdb: 7.7,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088735/sailorMoon_junqlk.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0103369/',
+    },
+
+    {
+      title: 'Hajime no Ippo',
+      year: '2000-2002',
+      synopsis:
+        'Bullied teen Ippo finds confidence and purpose through boxing. Guided by passion and relentless training, he climbs the ranks of Japan’s boxing world, facing fierce opponents and discovering the true heart of the sport.',
+      studio: 'Madhouse',
+      duration: '23-24',
+      imdb: 8.8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088727/hajimeNoIppo_a25rwe.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0481256/',
+    },
+
+    {
+      title: 'Yu Yu Hakusho',
+      year: '1992-1995',
+      synopsis:
+        'After dying saving a child, delinquent Yusuke Urameshi becomes a Spirit Detective, solving supernatural cases. With spirit energy and loyal friends, he fights demons and uncovers deadly plots across realms of the living and dead.',
+      studio: 'Studio Pierrot',
+      duration: '23-24',
+      imdb: 8.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088767/yuYuHakusho_vpklq9.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0185133/',
+    },
+
+    {
+      title: 'Hellsing Ultimate',
+      year: '2006-2012',
+      synopsis:
+        'Vampire Alucard serves the Hellsing Organization to battle the undead and supernatural threats. As war erupts against Nazi vampires and ancient horrors, he unleashes terrifying power in a dark, blood-soaked fight for survival.',
+      studio: 'Satelight • Madhouse • Graphinica',
+      duration: '40-50',
+      imdb: 8.2,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088766/hellsingUltimate_qtcgay.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0495212/',
+    },
+
+    {
+      title: 'Inuyasha',
+      year: '2000-2004',
+      synopsis:
+        'Kagome, a modern girl, falls into a well and ends up in feudal Japan, where she meets half-demon Inuyasha. Together, they search for shards of a sacred jewel, battling demons and unraveling a tragic, time-crossed love story.',
+      studio: 'Sunrise',
+      duration: '23-24',
+      imdb: 7.9,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088765/inuyasha_mljdsj.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0290223/',
+    },
+
+    {
+      title: 'Great Teacher Onizuka',
+      year: '1999-2000',
+      synopsis:
+        'Eikichi Onizuka, a former gangster turned teacher, takes on the toughest class in school. Using unorthodox methods, he teaches life lessons with humor and heart, determined to connect with students no one else could reach.',
+      studio: 'Studio Pierrot',
+      duration: '23-24',
+      imdb: 8.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088766/greatTeacherOnizuka_juemav.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0315008/',
+    },
+
+    {
+      title: 'Perfect Blue',
+      year: '1997',
+      synopsis:
+        'Mima, a pop idol turned actress, spirals into paranoia as a stalker and her own reflection blur fantasy and reality. This psychological thriller delves deep into identity, fame, and the terrifying cost of losing control.',
+      studio: 'Madhouse',
+      duration: '81',
+      imdb: 8,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088792/perfectBlue_igxsxs.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0156887/',
+    },
+
+    {
+      title: 'Tenshi no tamago',
+      year: '1985',
+      synopsis:
+        'In a desolate, dreamlike world, a girl guards a mysterious egg. When a silent soldier appears, they journey through eerie ruins. With haunting visuals and minimal dialogue, this surreal tale explores faith, loss, and rebirth.',
+      studio: 'Studio DEEN',
+      duration: '71',
+      imdb: 7.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088710/angelsEgg_b2b4vd.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0208502/',
+    },
+
+    {
+      title: 'Mirai nikki',
+      year: '2011-2013',
+      synopsis:
+        'Yukiteru gains a diary that predicts the future and is forced into a deadly survival game. Partnered with the obsessive and dangerous Yuno, he must outwit eleven other diary holders to become the new god of time and space.',
+      studio: 'Asread',
+      duration: '23-24',
+      imdb: 7.4,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088761/miraiNikki_cf1983.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt2069441/',
+    },
+    {
+      title: 'Ano hi mita hana no namae o bokutachi wa mada shiranai.',
+      year: '2011',
+      synopsis:
+        'A group of childhood friends drifts apart after a tragic accident. Years later, the ghost of their lost friend appears, urging them to confront guilt, grief, and the bond they thought was broken forever.',
+      studio: 'A-1 Pictures',
+      duration: '23-24',
+      imdb: 8.1,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088732/anoHana_q8oocu.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt1913273/',
+    },
+
+    {
+      title: 'Attack on Titan',
+      year: '2013-2023',
+      synopsis:
+        'Humanity fights extinction behind massive walls, threatened by man-eating Titans. When Eren gains Titan powers, he and his friends uncover shocking truths that will change everything about their world and what it means to be free.',
+      studio: 'Wit Studio • MAPPA',
+      duration: '23-24',
+      imdb: 9.1,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088736/attackOnTitan_twwbrs.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt2560140/',
+    },
+
+    {
+      title: 'Slam Dunk',
+      year: '1993-1996',
+      synopsis:
+        'Delinquent Hanamichi Sakuragi joins his high school basketball team to impress a girl, only to discover a passion for the sport. Through fierce rivals and personal growth, he rises as a powerful player with raw potential.',
+      studio: 'Toei Animation',
+      duration: '23-24',
+      imdb: 8.7,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088793/slamDunk_oalkd8.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0965547/',
+    },
+
+    {
+      title: 'Black Lagoon',
+      year: '2006',
+      synopsis:
+        'Rock, a businessman turned mercenary, joins the Lagoon Company—smugglers in Southeast Asia’s criminal underworld. With brutal action, moral ambiguity, and razor-sharp dialogue, this gritty anime dives deep into human darkness.',
+      studio: 'Madhouse',
+      duration: '23-24',
+      imdb: 7.9,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088732/blackLagoon_bzwncw.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt0962826/',
+    },
+
+    {
+      title: 'Michiko to Hatchin',
+      year: '2008-2009',
+      synopsis:
+        'Fugitive Michiko breaks out of prison to reunite with a girl named Hatchin. Chased by the law and haunted by their pasts, the duo embarks on a wild road trip across a vibrant, chaotic South American-inspired world.',
+      studio: 'Manglobe',
+      duration: '23-24',
+      imdb: 7.5,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088791/michikoEHatchin_y4imrn.jpg',
+      imdbLink: 'https://www.imdb.com/title/tt1324968/',
     },
   ];
 
@@ -830,8 +1745,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ${
               data.actors
                 ? `<div class="add-info"><span>starring</span> <span class="actors">${data.actors}</span></div>`
-                : data.creator
-                ? `<div class="add-info"><span>creator</span> <span class="creator">${data.creator}</span></div>`
                 : data.studio
                 ? `<div class="add-info"><span>studio</span> <span class="studio">${data.studio}</span></div>`
                 : ''

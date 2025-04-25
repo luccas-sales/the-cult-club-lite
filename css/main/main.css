@@ -125,7 +125,7 @@ h2 {
     background-color: var(--color-dark);
 }
 
-.search__btn {
+.search-btn {
     border: none;
     cursor: pointer;
     background-color: var(--color-dark);
@@ -138,7 +138,7 @@ h2 {
     align-items: center;
 }
 
-.search__btn:hover {
+.search-btn:hover {
     background-color: #333;
 }
 
@@ -157,7 +157,6 @@ h2 {
 }
 
 .search-backgroud {
-    /* background-color: var(--shadow-dark); */
     position: absolute;
     top: 0;
     left: 0;

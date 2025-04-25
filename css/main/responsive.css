@@ -1,4 +1,26 @@
 @media(max-width: 1024px) {
+    header {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .input:hover {
+        border: 0.2rem solid #444;
+    }
+
+    .input:focus {
+        border: 0.2rem solid var(--color-light);
+        background-color: var(--color-dark);
+    }
+
+    .search__btn:hover {
+        background-color: var(--color-dark);
+    }
+
+    .search__btn:active {
+        background-color: #333;
+    }
+
     .list {
         visibility: hidden;
     }
@@ -149,6 +171,14 @@
 }
 
 @media(max-width: 480px) {
+    .searh-container {
+        transform: scale(0.8);
+    }
+
+    .card-search {
+        transform: scale(0.65);
+    }
+
     #slider {
         transform: scale(0.35);
     }

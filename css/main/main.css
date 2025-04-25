@@ -181,10 +181,15 @@ h2 {
     z-index: 10;
 }
 
-
 .card-search .card-movie,
 .card-search .card-serie,
 .card-search .card-anime {
+    box-shadow: 0rem 0rem 50rem 10rem var(--shadow-dark);
+}
+
+.card-search .card-movie:hover,
+.card-search .card-serie:hover,
+.card-search .card-anime:hover {
     box-shadow: 0rem 0rem 50rem 10rem var(--shadow-dark);
 }
 

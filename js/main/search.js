@@ -1708,7 +1708,7 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
 
   const searchInput = document.querySelector('.input');
-  const searchBtn = document.querySelector('.search__btn');
+  const searchBtn = document.querySelector('.search-btn');
 
   const searchSection = document.querySelector('#search');
   const cardSearch = document.querySelector('.card-search');

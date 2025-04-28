@@ -1710,6 +1710,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const searchInput = document.querySelector('.input');
   const searchBtn = document.querySelector('.search-btn');
 
+  const searchSuggestions = document.querySelector('.search-suggestions');
+
   const searchSection = document.querySelector('#search');
   const cardSearch = document.querySelector('.card-search');
   const searchBackgroud = document.querySelector('.search-backgroud');
@@ -1718,22 +1720,24 @@ document.addEventListener('DOMContentLoaded', function () {
   const errorTitle = document.querySelector('.error-title');
   const errorSearchClose = document.querySelector('.error-close');
 
-  searchBtn.addEventListener('click', function (event) {
-    function normalizeText(text) {
-      return text
-        .toLowerCase()
-        .trim()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^\w\s]/gi, '');
-    }
+  function normalizeText(text) {
+    return text
+      .toLowerCase()
+      .trim()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^\w\s]/gi, '');
+  }
 
+  searchBtn.addEventListener('click', function (event) {
     const title = normalizeText(searchInput.value);
 
     try {
       if (title === '') {
         throw new Error('Input required.');
       }
+
+      searchSuggestions.style.visibility = 'hidden';
 
       const allItems = [...movies, ...series, ...animes];
 
@@ -1802,5 +1806,47 @@ document.addEventListener('DOMContentLoaded', function () {
   searchBackgroud.addEventListener('click', function (event) {
     searchSection.style.visibility = 'hidden';
     cardSearch.innerHTML = '';
+  });
+
+  searchInput.addEventListener('input', function () {
+    const title = normalizeText(searchInput.value);
+
+    const allItems = [...movies, ...series, ...animes];
+
+    const matchingSuggestions = allItems.filter((suggestion) =>
+      normalizeText(suggestion.title).startsWith(title)
+    );
+
+    if (matchingSuggestions.length === 0 || title === '') {
+      searchSuggestions.innerHTML = '';
+      searchSuggestions.style.visibility = 'hidden';
+      return;
+    }
+
+    searchSuggestions.style.visibility = 'visible';
+
+    const suggestionsHtml = matchingSuggestions
+      .slice(0, 3)
+      .map(
+        (suggestion) => `
+      <p class="suggestions">${suggestion.title}<span>${suggestion.year}</span></p>
+    `
+      )
+      .join('');
+
+    searchSuggestions.innerHTML = suggestionsHtml;
+  });
+
+  searchSuggestions.addEventListener('click', function (event) {
+    if (event.target.classList.contains('suggestions')) {
+      const suggestionElement = event.target;
+      if (
+        suggestionElement.firstChild &&
+        suggestionElement.firstChild.nodeType === Node.TEXT_NODE
+      ) {
+        searchInput.value = suggestionElement.firstChild.textContent.trim();
+        searchSuggestions.style.visibility = 'hidden';
+      }
+    }
   });
 });

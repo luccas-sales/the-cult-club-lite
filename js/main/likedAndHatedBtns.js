@@ -50,9 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const alreadyExists = cardExists(cardData);
 
       if (!alreadyExists) {
-        likedContainer.insertAdjacentHTML(
-          'beforeend',
-          `
+        likedContainer.innerHTML += `
           <div class="card-feedback">
             <div class="card-pic-feedback"
                 style="background-image: url('${cardData.image}');">
@@ -68,8 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   </svg></span>
             </button>
           </div>
-        `
-        );
+        `;
       }
     });
   }
@@ -112,9 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const alreadyExists = cardExists(cardData);
 
       if (!alreadyExists) {
-        hatedContainer.insertAdjacentHTML(
-          'beforeend',
-          `
+        hatedContainer.innerHTML += `
           <div class="card-feedback">
             <div class="card-pic-feedback"
                 style="background-image: url('${cardData.image}');">
@@ -130,8 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   </svg></span>
             </button>
           </div>
-        `
-        );
+        `;
       }
     });
   }

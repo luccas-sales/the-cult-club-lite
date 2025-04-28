@@ -1732,7 +1732,6 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="card-pic-${type}" style="background-image: url('${
         data.image
       }');">
-            <img class="mouse-touch-icon">
           </div>
           <h2 class="name">${data.title}<span class="release-year">${
         data.year

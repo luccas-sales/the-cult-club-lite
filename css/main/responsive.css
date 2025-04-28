@@ -33,10 +33,6 @@
         display: flex;
     }
 
-    .mouse-touch-icon {
-        content: url('https://res.cloudinary.com/thecultclub/image/upload/v1744082781/touch-icon_xlgivo.png');
-    }
-
     .feedback-box {
         height: 35rem;
     }
@@ -171,12 +167,12 @@
 }
 
 @media(max-width: 480px) {
-    .searh-container {
+    .search-container {
         transform: scale(0.8);
     }
 
     .card-search {
-        transform: scale(0.65);
+        transform: scale(0.7);
     }
 
     #slider {

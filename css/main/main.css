@@ -55,7 +55,8 @@ header {
     z-index: 1;
 }
 
-section {
+header,
+main {
     animation: fadeIn 1s ease-in-out;
 }
 

@@ -213,9 +213,9 @@ h2 {
     min-width: 35rem;
     height: 55rem;
     border-radius: 1.0rem;
-    cursor: pointer;
     pointer-events: all;
     z-index: 10;
+    user-select: none;
 }
 
 .card-search .card-movie,
@@ -223,7 +223,6 @@ h2 {
 .card-search .card-anime {
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 0rem 0rem 50rem 10rem var(--shadow-dark);
-    /* background-color: #d28a91; */
 }
 
 .card-search .card-movie:hover,

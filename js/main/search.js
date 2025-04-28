@@ -1846,6 +1846,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ) {
         searchInput.value = suggestionElement.firstChild.textContent.trim();
         searchSuggestions.style.visibility = 'hidden';
+        searchBtn.click();
       }
     }
   });

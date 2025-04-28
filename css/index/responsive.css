@@ -1,4 +1,8 @@
 @media(max-width: 1023px) {
+    main {
+        transform: scale(0.9);
+    }
+
     .login {
         gap: 3rem;
     }

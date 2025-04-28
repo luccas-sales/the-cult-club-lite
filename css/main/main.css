@@ -42,7 +42,7 @@ body {
     line-height: 1.5;
     display: flex;
     flex-direction: column;
-    min-height: 100dvh;
+    min-height: 100vh;
     background: var(--gradient-backgroud);
 }
 
@@ -52,8 +52,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10rem;
-    padding: 5rem;
     z-index: 1;
 }
 
@@ -84,23 +82,31 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100dvh;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
     padding: 5rem 0rem;
 }
 
 /*Header input*/
-.searh-container {
+.search-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3.5rem;
     width: 35rem;
+    margin: 2rem;
+    position: relative;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 35rem;
+    height: 100%;
 }
 
 .input {
-    width: 35rem;
+    width: 100%;
     height: 100%;
     outline: none;
     font-size: 1.4rem;
@@ -112,7 +118,6 @@ h2 {
     border: 0.2rem solid transparent;
     border-top-left-radius: 0.7rem;
     border-bottom-left-radius: 0.7rem;
-    margin-right: 0.1rem;
     transition: all .2s ease;
 }
 
@@ -128,6 +133,8 @@ h2 {
 .search-btn {
     border: none;
     cursor: pointer;
+    color: var(--color-light);
+    font-size: 1.5rem;
     background-color: var(--color-dark);
     border-top-right-radius: 0.7rem;
     border-bottom-right-radius: 0.7rem;
@@ -140,6 +147,39 @@ h2 {
 
 .search-btn:hover {
     background-color: #333;
+}
+
+.search-suggestions {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: 0.2rem solid var(--shadow-hover);
+    border-top: none;
+    border-radius: 0 0 0.7rem 0.7rem;
+    z-index: -1;
+    visibility: hidden;
+    padding-top: 1rem;
+}
+
+.search-suggestions p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.search-suggestions p:hover {
+    background-color: var(--shadow-hover);
+}
+
+.search-suggestions span {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 /* Card Search */
@@ -173,17 +213,17 @@ h2 {
     min-width: 35rem;
     height: 55rem;
     border-radius: 1.0rem;
-    user-select: none;
     cursor: pointer;
     pointer-events: all;
-    transform: scale(0.9);
     z-index: 10;
 }
 
 .card-search .card-movie,
 .card-search .card-serie,
 .card-search .card-anime {
+    font-family: 'Times New Roman', Times, serif;
     box-shadow: 0rem 0rem 50rem 10rem var(--shadow-dark);
+    /* background-color: #d28a91; */
 }
 
 .card-search .card-movie:hover,
@@ -270,7 +310,6 @@ h2 {
     height: 55rem;
     border-radius: 1.0rem;
     user-select: none;
-    cursor: pointer;
     pointer-events: all;
 }
 
@@ -346,61 +385,6 @@ h2 {
     align-self: center;
     padding: 0.5rem;
     border-radius: 0.5rem;
-}
-
-.selectedList .card-pic-movie,
-.selectedList .card-pic-serie,
-.selectedList .card-pic-anime {
-    border-image: fill 0 linear-gradient(#0001, #111);
-    animation: disappear 3s forwards;
-}
-
-@keyframes disappear {
-    0% {
-        border-image: fill 0 linear-gradient(#0001, #111);
-    }
-
-    66.66% {
-        border-image: fill 0 linear-gradient(#0001, #111);
-    }
-
-    100% {
-        border-image: fill 0 linear-gradient(rgba(0, 0, 1, 0), rgba(17, 17, 17, 0));
-    }
-}
-
-.mouse-touch-icon {
-    content: url('https://res.cloudinary.com/thecultclub/image/upload/v1744082781/click-icon_jjp0lv.png');
-    opacity: 0;
-}
-
-.selectedList .mouse-touch-icon {
-    opacity: 1;
-    position: absolute;
-    bottom: 1rem;
-    right: 0.5rem;
-    width: 3.5rem;
-    pointer-events: none;
-    animation: pulseFadeOut 3s ease-in-out forwards;
-}
-
-@keyframes pulseFadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    33.33% {
-        opacity: 0.5;
-    }
-
-    66.66% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-
 }
 
 .selectedList .card-pic-movie:hover,
@@ -524,7 +508,7 @@ h2 {
     display: none;
     justify-content: space-between;
     align-items: center;
-    width: 45rem;
+    width: 42rem;
     position: absolute;
     filter: drop-shadow(0rem 0rem 0.2rem rgba(0, 0, 0, 0.5));
     pointer-events: none;
@@ -636,8 +620,9 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    min-height: 100dvh;
+    min-height: 100vh;
     padding: 5rem 0rem;
+    user-select: none;
 }
 
 .liked-vs-hated-container {

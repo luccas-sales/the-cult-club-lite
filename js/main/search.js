@@ -600,6 +600,18 @@ document.addEventListener('DOMContentLoaded', function () {
         'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088712/theAmazingSpiderMan_app4ki.jpg',
       imdbLink: 'https://www.imdb.com/list/ls047442667/',
     },
+    {
+      title: 'Pokémon: The First Movie',
+      year: '2012–2014',
+      synopsis:
+        'Scientists create Mewtwo, a powerful Pokémon cloned from the rare Mew. As Mewtwo seeks revenge against humanity, Ash and his friends must confront its fury. Facing battles, loss, and hope, they learn that true strength lies in compassion and unity.',
+      actors: 'Ash • Pikachu • Mewtwo',
+      duration: '75',
+      imdb: 6.3,
+      image:
+        'https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745871636/pokemonTheFirstMovie_cbk7l5.gif',
+      imdbLink: 'https://www.imdb.com/title/tt0190641/',
+    },
   ];
 
   const series = [

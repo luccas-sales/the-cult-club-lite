@@ -1642,7 +1642,7 @@ document.addEventListener('DOMContentLoaded', function () {
       imdbLink: 'https://www.imdb.com/title/tt2069441/',
     },
     {
-      title: 'Ano hi mita hana no namae o bokutachi wa mada shiranai.',
+      title: 'Ano hi mita hana no namae o bokutachi wa mada shiranai',
       year: '2011',
       synopsis:
         'A group of childhood friends drifts apart after a tragic accident. Years later, the ghost of their lost friend appears, urging them to confront guilt, grief, and the bond they thought was broken forever.',

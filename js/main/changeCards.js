@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
       imdbLink: 'https://www.imdb.com/list/ls068935667/',
     },
     {
-      title: "Harry Potter and the Philosopher's Stone",
+      title: 'Harry Potter',
       year: '2001–2011',
       synopsis:
         'A young boy discovers he’s a wizard and is swept into a magical world hidden from ordinary eyes. At Hogwarts, he finds friendship, danger, and a dark mystery tied to his past. As he unravels secrets, Harry begins a journey that will define the fate of the wizarding world.',

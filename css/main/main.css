@@ -746,6 +746,7 @@ h2 {
 
 .card-feedback p {
     font-weight: 600;
+    text-decoration: overline;
 }
 
 .card-pic-feedback {

@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     return Array.from(allCards).some((card) => {
       const title = card.querySelector('h3')?.textContent.trim();
-      const year = card.querySelector('p')?.textContent.trim();
+      const type = card.querySelector('p')?.textContent.trim();
       const image =
         card.querySelector('.card-pic-feedback')?.style.backgroundImage;
 
       return (
         title === movieData.title &&
-        year === movieData.year &&
+        type === movieData.type &&
         image.includes(movieData.image)
       );
     });
@@ -38,14 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const name = selectedCard.querySelector('.name');
       const title = name.childNodes[0].textContent.trim();
-      const year = selectedCard
-        .querySelector('.release-year')
-        .textContent.trim();
+      const type = selectedCard.querySelector('.list-title').textContent.trim();
 
       const cardData = {
         image: backgroundImage,
         title: title,
-        year: year,
+        type: type,
       };
 
       const likedContainer = document.getElementById('liked-container');
@@ -60,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 style="background-image: url('${cardData.image}');">
             </div>
             <h3>${cardData.title}</h3>
-            <p>${cardData.year}</p>
+            <p>${cardData.type}</p>
             <button id="remove-feedback-btn">
               <span class="text">Remove</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg"
                       width="16" height="16" fill="currentColor" class="bi bi-trash-fill"
@@ -102,14 +100,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const name = selectedCard.querySelector('.name');
       const title = name.childNodes[0].textContent.trim();
-      const year = selectedCard
-        .querySelector('.release-year')
-        .textContent.trim();
+      const type = selectedCard.querySelector('.list-title').textContent.trim();
 
       const cardData = {
         image: backgroundImage,
         title: title,
-        year: year,
+        type: type,
       };
 
       const hatedContainer = document.getElementById('hated-container');
@@ -124,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 style="background-image: url('${cardData.image}');">
             </div>
             <h3>${cardData.title}</h3>
-            <p>${cardData.year}</p>
+            <p>${cardData.type}</p>
             <button id="remove-feedback-btn">
               <span class="text">Remove</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg"
                       width="16" height="16" fill="currentColor" class="bi bi-trash-fill"

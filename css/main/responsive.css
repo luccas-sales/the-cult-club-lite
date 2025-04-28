@@ -37,10 +37,6 @@
         height: 35rem;
     }
 
-    .feedback-box::-webkit-scrollbar {
-        display: none;
-    }
-
     .card-feedback {
         width: 8rem;
         height: 13rem;

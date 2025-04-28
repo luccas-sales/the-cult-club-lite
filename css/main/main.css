@@ -687,16 +687,7 @@ h2 {
 }
 
 .feedback-box::-webkit-scrollbar {
-    width: 1rem;
-}
-
-.feedback-box::-webkit-scrollbar-thumb {
-    background: var(--color-dark);
-    border-radius: 1rem;
-}
-
-.feedback-box::-webkit-scrollbar-thumb:hover {
-    cursor: pointer;
+    display: none;
 }
 
 .card-feedback {

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async function () {
-  const movies = await fetchData('../../json/movies.json');
-  const series = await fetchData('../../json/series.json');
-  const animes = await fetchData('../../json/animes.json');
+  const movies = await fetchData('/json/movies.json');
+  const series = await fetchData('/json/series.json');
+  const animes = await fetchData('/json/animes.json');
 
   async function fetchData(url) {
     try {

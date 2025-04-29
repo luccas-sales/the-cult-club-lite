@@ -1,0 +1,392 @@
+[
+  {
+    "title": "Mr. Robot",
+    "year": "2015-2019",
+    "synopsis": "A brilliant but troubled hacker is recruited by an underground group to take down corrupt corporations. As his reality begins to blur, he struggles with identity, morality, and mental illness in a world of digital warfare and hidden agendas.",
+    "actors": "Rami M. • Christian S. • Carly C.",
+    "duration": "40-45",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088712/mrRobot_hx6no2.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt4158110/"
+  },
+  {
+    "title": "Hannibal",
+    "year": "2013-2015",
+    "synopsis": "FBI profiler Will Graham partners with psychiatrist Dr. Hannibal Lecter to solve gruesome crimes, unaware Lecter is secretly a cannibalistic killer. A dark psychological game unfolds as their bond deepens in chilling and disturbing ways.",
+    "actors": "Mads M. • Hugh D. • Laurence F.",
+    "duration": "40-45",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088711/hannibal_tgr7eb.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2243973/"
+  },
+  {
+    "title": "You",
+    "year": "2018-2025",
+    "synopsis": "A charming but dangerously obsessive man uses technology and manipulation to insert himself into the lives of the women he loves. As he spirals deeper into obsession, his twisted sense of romance leaves destruction in his wake.",
+    "actors": "Penn B. • Victoria P. • Elizabeth L.",
+    "duration": "40-50",
+    "imdb": 7.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088718/you_phmfxq.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt7335184/"
+  },
+  {
+    "title": "The Rain",
+    "year": "2018-2020",
+    "synopsis": "Years after a deadly virus carried by rainfall wipes out much of Scandinavia, two siblings join a group of survivors in search of safety. As they travel through a ravaged world, they uncover dark secrets about the virus and themselves.",
+    "actors": "Alba A. • Lucas L. • Mikkel F.",
+    "duration": "40-50",
+    "imdb": 6.3,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088719/theRain_ms7g2p.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt6656238/"
+  },
+  {
+    "title": "The Big Bang Theory",
+    "year": "2007-2019",
+    "synopsis": "A group of socially awkward scientists navigate friendships, relationships, and pop culture in hilarious ways. As they grow personally and professionally, their geeky antics and witty banter redefine the dynamics of modern sitcoms.",
+    "actors": "Jim P. • Johnny G. • Kaley C.",
+    "duration": "20-22",
+    "imdb": 8.1,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088763/theBigBangTheory_tamhjp.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0898266/"
+  },
+  {
+    "title": "Severance",
+    "year": "2022-",
+    "synopsis": "In a mysterious corporation, employees undergo a procedure that separates work memories from personal ones. When the lines between both worlds blur, a gripping mystery unfolds around identity, free will, and corporate control.",
+    "actors": "Adam S. • Britt L. • Patricia A.",
+    "duration": "45-50",
+    "imdb": 8.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/severance_ftdvxr.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt11280740/"
+  },
+  {
+    "title": "The Penguin",
+    "year": "2024",
+    "synopsis": "After Gotham descends into chaos, Oswald Cobblepot—better known as The Penguin—rises through the criminal ranks. In a gritty battle for power, he faces betrayal, ambition, and his own dark legacy in the wake of Batman's absence.",
+    "actors": "Colin F. • Cristin M. • Clancy B.",
+    "duration": "50-60",
+    "imdb": 8.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/thePenguin_vhtwu5.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt15435876/"
+  },
+  {
+    "title": "Peacemaker",
+    "year": "2022-",
+    "synopsis": "After the events of The Suicide Squad, Peacemaker joins a covert black ops team to maintain peace at any cost—even if it means killing for it. His journey challenges his beliefs as he confronts his past and questions his brutal methods.",
+    "actors": "John C. • Danielle B. • Freddie S.",
+    "duration": "39-46",
+    "imdb": 8.3,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/peacemaker_toqswn.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt13146488/"
+  },
+  {
+    "title": "The Sopranos",
+    "year": "1999-2007",
+    "synopsis": "Tony Soprano, a mob boss juggling criminal duties and family life, seeks therapy to cope with anxiety. As he navigates betrayal, violence, and power, his dual life threatens to collapse in this groundbreaking psychological crime drama.",
+    "actors": "James G. • Edie F. • Lorraine B.",
+    "duration": "50-60",
+    "imdb": 9.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theSopranos_rhhfwu.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0141842/"
+  },
+  {
+    "title": "Breaking Bad",
+    "year": "2008-2013",
+    "synopsis": "A high school chemistry teacher turns to cooking meth after a cancer diagnosis. As he descends into the drug underworld, he transforms into a ruthless figure, risking everything for power, pride, and a twisted sense of legacy.",
+    "actors": "Bryan C. • Aaron P. • Anna G.",
+    "duration": "45-50",
+    "imdb": 9.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/breakingBad_iirqzz.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0903747/"
+  },
+  {
+    "title": "Better Call Saul",
+    "year": "2015-2022",
+    "synopsis": "Before he became Saul Goodman, Jimmy McGill was a small-time lawyer with big ambitions. This prequel to Breaking Bad explores his morally complex path, full of cons, heart, and tragedy, toward becoming the criminal lawyer we know.",
+    "actors": "Bob O. • Rhea S. • Jonathan B.",
+    "duration": "45-55",
+    "imdb": 9.0,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/betterCallSaul_qu0xck.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt3032476/"
+  },
+  {
+    "title": "Dune: Prophecy",
+    "year": "2024-",
+    "synopsis": "Set long before the rise of Paul Atreides, this series follows the origins of the Bene Gesserit. As political and spiritual tensions rise across the galaxy, the sisterhood’s secretive influence grows in a deadly quest for power.",
+    "actors": "Emily W. • Olivia W. • Travis F.",
+    "duration": "50-60",
+    "imdb": 7.3,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/duneProphecy_etkawb.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt10466872/"
+  },
+  {
+    "title": "Game of Thrones",
+    "year": "2011-2019",
+    "synopsis": "Noble families clash for control of the Iron Throne in a sprawling fantasy world where loyalty is fragile and winter is always coming. Dragons, betrayal, and ambition drive this epic saga of power, bloodlines, and destiny.",
+    "actors": "Emilia C. • Kit H. • Peter D.",
+    "duration": "50-60",
+    "imdb": 9.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/gameOfThrones_ety8wm.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0944947/"
+  },
+  {
+    "title": "The Last of Us",
+    "year": "2023-",
+    "synopsis": "After a fungal outbreak decimates humanity, a hardened survivor escorts a mysterious young girl across a post-apocalyptic America. Their bond deepens as they face monstrous threats and the haunting cost of survival.",
+    "actors": "Pedro P. • Bella R. • Anna T.",
+    "duration": "45-60",
+    "imdb": 8.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theLastOfUs_xucuic.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt3581920/"
+  },
+  {
+    "title": "The Office",
+    "year": "2005-2013",
+    "synopsis": "A mockumentary about the mundane yet hilarious lives of office workers at Dunder Mifflin. With awkward romances, quirky coworkers, and absurd moments, it’s a heartwarming and comical dive into everyday corporate chaos.",
+    "actors": "Steve C. • Rainn W. • John K.",
+    "duration": "22-25",
+    "imdb": 9,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theOffice_h43yes.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0386676/"
+  },
+  {
+    "title": "Cobra Kai",
+    "year": "2018-2025",
+    "synopsis": "Decades after the events of Karate Kid, Johnny Lawrence reopens Cobra Kai dojo, reigniting his rivalry with Daniel LaRusso. Old grudges and new students collide in a fierce battle of philosophies, legacy, and redemption.",
+    "actors": "Ralph M. • William Z. • Xolo M.",
+    "duration": "30-40",
+    "imdb": 8.4,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/cobraKai_rasvs0.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt7221388/"
+  },
+  {
+    "title": "Dark",
+    "year": "2017-2020",
+    "synopsis": "In a small German town, the disappearance of a boy uncovers a time-travel conspiracy spanning generations. Families are connected in haunting ways as past, present, and future collide in this mind-bending sci-fi thriller.",
+    "actors": "Louis H. • Lisa V. • Andreas P.",
+    "duration": "45-55",
+    "imdb": 8.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/dark_mtqe1h.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt5753856/"
+  },
+  {
+    "title": "Adolescence",
+    "year": "2025",
+    "synopsis": "A raw exploration of teenage life, where identity, love, trauma, and rebellion intertwine. As emotions intensify, the characters struggle to find meaning and belonging in a world that feels both intimate and overwhelming.",
+    "actors": "Owen C. • Stephen G. • Erin D.",
+    "duration": "51–65",
+    "imdb": 8.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/adolescence_v4eae2.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt31806037/"
+  },
+  {
+    "title": "Atlanta",
+    "year": "2016-2022",
+    "synopsis": "Earn and his cousin Paper Boi try to make it in Atlanta's rap scene, navigating fame, race, and surreal situations. The show blends sharp social commentary with dark humor, creating a unique and unpredictable cultural lens.",
+    "actors": "Donald G. • Brian T. H. • Lakeith S.",
+    "duration": "25-35",
+    "imdb": 8.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/atlanta_diqvrk.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt4288182/"
+  },
+  {
+    "title": "Cowboy Bebop",
+    "year": "2021",
+    "synopsis": "In a stylish space-western future, bounty hunters Spike, Jet, and Faye chase criminals across the solar system. Beneath their cool exteriors lie deep scars, as the crew of the Bebop confronts the pasts they can’t outrun.",
+    "actors": "John C. • Mustafa S. • Daniella P.",
+    "duration": "35-45",
+    "imdb": 6.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/cowboyBebop_cawutq.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt1267295/"
+  },
+  {
+    "title": "Black Mirror",
+    "year": "2011-2019",
+    "synopsis": "A chilling anthology that explores the dark side of technology and human nature. Each standalone episode presents a near-future scenario where innovation collides with moral decay, often with shocking and thought-provoking results.",
+    "actors": "Bryce D. • Jesse P. • Hayley A.",
+    "duration": "40-60",
+    "imdb": 8.8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/blackMirror_pbybpe.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2085059/"
+  },
+  {
+    "title": "Stranger Things",
+    "year": "2016-2024",
+    "synopsis": "When a boy vanishes, his friends uncover a government experiment, a telekinetic girl, and a parallel dimension called the Upside Down. With ‘80s nostalgia and supernatural terror, the town of Hawkins becomes ground zero for mystery.",
+    "actors": "Millie B. • Finn W. • David H.",
+    "duration": "45-60",
+    "imdb": 8.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/strangerThings_fi1n0i.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt4574334/"
+  },
+  {
+    "title": "Narcos",
+    "year": "2015-2017",
+    "synopsis": "Follow the real-life rise and fall of drug kingpins like Pablo Escobar in this gripping crime drama. As law enforcement races to stop the growing cartels, power, greed, and violence reshape the world of the drug trade.",
+    "actors": "Wagner M. • Pedro P. • Boyd H.",
+    "duration": "45-55",
+    "imdb": 8.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524228/d12423e338722a169b879194bbd0d873_uqhede.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2707408/"
+  },
+  {
+    "title": "The Witcher",
+    "year": "2019-",
+    "synopsis": "Geralt of Rivia, a monster hunter with a mysterious past, navigates a dark fantasy world filled with war, magic, and mutated beasts. Fate ties him to a powerful child and a sorceress as chaos threatens the Continent.",
+    "actors": "Henry C. • Anya C. • Freya A.",
+    "duration": "45-60",
+    "imdb": 7.9,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theWitcher_c00wii.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt5180504/"
+  },
+  {
+    "title": "The Crown",
+    "year": "2016-2023",
+    "synopsis": "A dramatized chronicle of Queen Elizabeth II’s reign, revealing the personal and political challenges behind the British monarchy. As the world changes, the royal family grapples with duty, scandal, and the weight of tradition.",
+    "actors": "Claire F. • Olivia C. • Imelda S.",
+    "duration": "50-60",
+    "imdb": 8.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/theCrown_ctw4tx.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt4786824/"
+  },
+  {
+    "title": "Sherlock",
+    "year": "2010-2017",
+    "synopsis": "A modern twist on the classic detective, Sherlock Holmes uses brilliant deduction and tech-savvy methods to solve London’s toughest crimes. Alongside Dr. Watson, he faces deadly foes and unravels mind-bending mysteries.",
+    "actors": "Benedict C. • Martin F. • Andrew S.",
+    "duration": "85-90",
+    "imdb": 9.1,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/sherlock_ep9tts.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt1475582/"
+  },
+  {
+    "title": "Fargo",
+    "year": "2014-2024",
+    "synopsis": "Inspired by the Coen Brothers’ film, each season delivers a new tale of crime and morality in the Midwest. Ordinary people are drawn into extraordinary violence, revealing how far they’ll go when pushed to the edge.",
+    "actors": "Billy B. • Kirsten D. • Ewan M.",
+    "duration": "50-60",
+    "imdb": 8.8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/fargo_wq7kuz.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2802850/"
+  },
+  {
+    "title": "The Boys",
+    "year": "2019-",
+    "synopsis": "In a world where superheroes are corrupted by fame and power, a vigilante group known as The Boys fights to expose them. Brutal, satirical, and darkly funny, the show dismantles the myth of heroism one bloody punch at a time.",
+    "actors": "Karl U. • Jack Q. • Antony S.",
+    "duration": "55-60",
+    "imdb": 8.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/theBoys_thihso.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt1190634/"
+  },
+  {
+    "title": "Loki",
+    "year": "2021-2023",
+    "synopsis": "After stealing the Tesseract, Loki finds himself caught by the Time Variance Authority. As timelines unravel, he faces alternate versions of himself and must confront who he is—and what kind of god he truly wants to be.",
+    "actors": "Tom H. • Owen W. • Sophia D.M.",
+    "duration": "40-50",
+    "imdb": 8.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/loki_p1ro5m.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt9140554/"
+  },
+  {
+    "title": "The Umbrella Academy",
+    "year": "2019-2024",
+    "synopsis": "Adopted by an eccentric billionaire, seven superpowered siblings reunite to stop an impending apocalypse. Dysfunctional and quirky, they face time travel, family trauma, and wild twists in this chaotic superhero tale.",
+    "actors": "Elliot P. • Tom H. • Emmy R.L.",
+    "duration": "45-60",
+    "imdb": 7.8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/theUmbrellaAcademy_w90cj4.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt1312171/"
+  },
+  {
+    "title": "La Casa de Papel",
+    "year": "2017-2021",
+    "synopsis": "A criminal mastermind recruits a team to execute a perfect heist on Spain’s Royal Mint. As the plan unfolds, loyalties are tested and emotions rise, turning the robbery into a high-stakes psychological and political drama.",
+    "actors": "Álvaro M. • Úrsula C. • Pedro A.",
+    "duration": "40-50",
+    "imdb": 8.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/laCasaDePapel_wnlngw.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt6468322/"
+  },
+  {
+    "title": "The Handmaid’s Tale",
+    "year": "2017-2025",
+    "synopsis": "In a dystopian future where fertility is rare, women are forced into servitude by a theocratic regime. Offred fights to survive and resist, clinging to hope, identity, and the memory of the life she once had.",
+    "actors": "Elisabeth M. • Yvonne S. • Joseph F.",
+    "duration": "50-60",
+    "imdb": 8.3,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524220/theHandmaidsTale_semgrm.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt5834204/"
+  },
+  {
+    "title": "Peaky Blinders",
+    "year": "2013-2022",
+    "synopsis": "After WWI, the Shelby crime family rises in Birmingham, England, led by the ambitious and ruthless Tommy Shelby. Power, betrayal, and violence define their journey as they build an empire in a volatile world.",
+    "actors": "Cillian M. • Paul A. • Helen M.",
+    "duration": "55-60",
+    "imdb": 8.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/peakyBlinders_ugyikl.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2442560/"
+  },
+  {
+    "title": "Dexter",
+    "year": "2006-2013",
+    "synopsis": "By day, Dexter is a forensic expert for Miami PD. By night, he’s a meticulous serial killer who targets other killers. Torn between his dark urges and a desire for normalcy, he walks a razor-thin moral line.",
+    "actors": "Michael C. H. • Jennifer C. • David Z.",
+    "duration": "50-55",
+    "imdb": 8.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/dexter_a5dtqt.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0773262/"
+  },
+  {
+    "title": "Pose",
+    "year": "2018-2021",
+    "synopsis": "Set in 1980s and ’90s New York, Pose explores the vibrant world of ballroom culture, highlighting LGBTQ+ communities and the impact of the AIDS crisis. It’s a powerful celebration of identity, resilience, and chosen family.",
+    "actors": "Mj R. • Billy P. • Dominique J.",
+    "duration": "45-60",
+    "imdb": 8.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/pose_niqzbk.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt7562112/"
+  },
+  {
+    "title": "The Punisher",
+    "year": "2017-2019",
+    "synopsis": "After his family is murdered, Frank Castle becomes the Punisher, waging a brutal war on crime. Driven by vengeance and haunted by trauma, he dismantles corrupt systems with lethal precision and unflinching resolve.",
+    "actors": "Jon B. • Ben B. • Amber R.",
+    "duration": "50-55",
+    "imdb": 8.4,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524221/thePunisher_zt4iju.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt5675620/"
+  },
+  {
+    "title": "Bates Motel",
+    "year": "2013-2017",
+    "synopsis": "A modern prequel to Psycho, the series explores Norman Bates' descent into madness. As he and his mother Norma navigate secrets, murder, and mental illness, a chilling transformation begins in their sleepy motel.",
+    "actors": "Freddie H. • Vera F. • Max T.",
+    "duration": "40-45",
+    "imdb": 8.1,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524227/batesMotel_fnn4p6.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2188671/"
+  },
+  {
+    "title": "WandaVision",
+    "year": "2021",
+    "synopsis": "Wanda Maximoff and Vision live an idyllic suburban life—until cracks appear in their reality. As their perfect world unravels, Wanda must confront grief, power, and the consequences of bending reality to her will.",
+    "actors": "Elizabeth O. • Paul B. • Kathryn H.",
+    "duration": "30-40",
+    "imdb": 7.9,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524223/wandaVision_jj81rl.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt9140560/"
+  },
+  {
+    "title": "Hilda Hurricane",
+    "year": "1998",
+    "synopsis": "Set in the turbulent world of 1950s Brazil, 'Hilda Hurricane' follows the life of Hilda, a young woman who rises from poverty to become a powerful figure in Rio de Janeiro’s nightlife. As she navigates love, betrayal, and ambition, Hilda grapples with the cost of her desires.",
+    "actors": "Ana P. • Rodrigo S. • Stênio G.",
+    "duration": "45-50",
+    "imdb": 8.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1745524219/hildaHurricane_y09wjx.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0163450/"
+  }
+]

@@ -1,0 +1,533 @@
+[
+  {
+    "title": "Berserk",
+    "year": "1997-1998",
+    "synopsis": "A lone mercenary haunted by a cursed past battles his way through a world of war, demons, and betrayal. As he faces relentless enemies and inner torment, Guts forges his own fate with a massive sword and an unbreakable will.",
+    "studio": "Oriental Light and Magic",
+    "duration": "20-25",
+    "imdb": 8.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088717/berserk_vdgwj5.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0318871/"
+  },
+  {
+    "title": "One Piece",
+    "year": "1999-",
+    "synopsis": "A boy with a rubber body and a dream of becoming Pirate King sets sail in search of a legendary treasure. Alongside his quirky crew, Luffy braves vast seas, strange islands, and powerful foes in a journey of freedom and friendship.",
+    "studio": "Toei Animation",
+    "duration": "20-25",
+    "imdb": 9,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088792/onePiece_p5ufme.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0388629/"
+  },
+  {
+    "title": "Forest of Piano",
+    "year": "2018-2019",
+    "synopsis": "A gifted boy from a rough background finds solace in an abandoned piano deep in the woods. As his talent blooms, he enters a world of classical music where passion, rivalry, and his mysterious gift take center stage.",
+    "studio": "Gaina",
+    "duration": "23-25",
+    "imdb": 7.3,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088735/forestOfPiano_aq1acl.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt8043492/"
+  },
+  {
+    "title": "Devilman: Crybaby",
+    "year": "2018",
+    "synopsis": "When demons return to reclaim the Earth, a kind-hearted teen merges with a powerful devil to protect humanity. As chaos erupts, he battles monstrous threats and moral dilemmas, blurring the line between good and evil.",
+    "studio": "Science SARU",
+    "duration": "23-25",
+    "imdb": 7.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088719/devilmanCrybaby_yqn9pw.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt6660498/"
+  },
+  {
+    "title": "Don't Toy With Me, Miss Nagatoro",
+    "year": "2021-",
+    "synopsis": "A shy student finds his quiet life turned upside down by a mischievous underclassman who loves teasing him. As their odd bond grows, beneath the taunts and blushes blooms a surprising connection neither expected.",
+    "studio": "Telecom Animation Film • OLM",
+    "duration": "23-25",
+    "imdb": 7.1,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088792/nagatoro_gjzrv7.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt12635162/"
+  },
+  {
+    "title": "Death Note",
+    "year": "2006-2007",
+    "synopsis": "A brilliant student discovers a notebook that kills anyone whose name is written in it. Driven by a god complex, he sparks a deadly cat-and-mouse game with a genius detective determined to stop his reign of terror.",
+    "studio": "Madhouse",
+    "duration": "23-24",
+    "imdb": 8.9,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088720/deathNote_qaynvl.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0877057/"
+  },
+  {
+    "title": "Tokyo Ghoul",
+    "year": "2014-2018",
+    "synopsis": "A shy college student becomes part-human, part-ghoul after a fateful encounter. Struggling between two worlds, he must adapt to a dark, violent underworld while holding onto the last pieces of his humanity.",
+    "studio": "Studio Pierrot",
+    "duration": "23-24",
+    "imdb": 7.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088794/tokyoGhoul_mq08ui.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt3741634/"
+  },
+  {
+    "title": "Dan Da Dan",
+    "year": "2024-",
+    "synopsis": "A skeptic boy and a girl who believes in the supernatural stumble into bizarre battles with aliens and ghosts. As they dive deeper into strange phenomena, their bond grows amid chaos, comedy, and wild adventures.",
+    "studio": "Science SARU",
+    "duration": "23-24",
+    "imdb": 8.4,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088717/danDaDan_zsn9nl.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt30217403/"
+  },
+  {
+    "title": "Bleach",
+    "year": "2004-2023",
+    "synopsis": "A teenager gains the powers of a Soul Reaper and is thrust into the duty of guiding souls and battling deadly spirits. As hidden realms unfold, Ichigo must protect the living and the dead while uncovering secrets of his power.",
+    "studio": "Studio Pierrot",
+    "duration": "23-24",
+    "imdb": 8.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088762/bleach_t0ymlg.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0434665/"
+  },
+  {
+    "title": "cyberpunk: Edgerunners",
+    "year": "2022",
+    "synopsis": "In a dystopian future, a street kid joins a crew of cyber-enhanced mercenaries to survive the brutal city of Night City. As he upgrades his body and dives into deadly jobs, the cost of ambition becomes dangerously high.",
+    "studio": "Studio Trigger",
+    "duration": "23-25",
+    "imdb": 8.3,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088730/cyberpunkEdgerunners_jik4nv.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt12590266/"
+  },
+  {
+    "title": "Akira",
+    "year": "1988",
+    "synopsis": "In a dystopian Neo-Tokyo, biker Kaneda gets drawn into a military secret when his friend Tetsuo gains destructive psychic powers. As chaos rises, Kaneda must confront both government conspiracies and the explosive force his friend becomes.",
+    "studio": "Tokyo Movie Shinsha",
+    "duration": "124",
+    "imdb": 8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088732/akira_blckmp.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0094625/"
+  },
+  {
+    "title": "Ghost in the Shell",
+    "year": "1995",
+    "synopsis": "Cyborg agent Major Kusanagi hunts a mysterious hacker known as the Puppet Master in a high-tech future. As the lines between human and machine blur, she questions her identity, purpose, and what it truly means to have a soul.",
+    "studio": "Production I.G",
+    "duration": "23-24",
+    "imdb": 7.9,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088809/ghostInTheShell_e9t5hs.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0113568/"
+  },
+  {
+    "title": "Cowboy Bebop",
+    "year": "1998-1999",
+    "synopsis": "A ragtag crew of bounty hunters—Spike, Jet, Faye, Ed, and Ein—drift through space on the Bebop chasing criminals and running from their pasts. Stylish, soulful, and packed with action, their journey is a mix of jazz and melancholy.",
+    "studio": "Sunrise",
+    "duration": "23-24",
+    "imdb": 8.9,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088715/cowboyBebop_zex6np.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0213338/"
+  },
+  {
+    "title": "Neon Genesis Evangelion",
+    "year": "1995-1996",
+    "synopsis": "Teenager Shinji is recruited to pilot a giant robot and protect Earth from monstrous beings known as Angels. But beneath the battles lie deep psychological trauma, religious symbolism, and humanity’s desperate struggle to survive.",
+    "studio": "Gainax • Tatsunoko Production",
+    "duration": "23-24",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088733/neonGenesisEvangelion_trcek5.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0112159/"
+  },
+  {
+    "title": "Jojo's Bizarre Adventure",
+    "year": "2012-",
+    "synopsis": "Generations of the Joestar family face supernatural foes using unique powers called Stands. From Victorian England to modern Japan, this epic saga blends flamboyant style, wild action, and dramatic family legacies.",
+    "studio": "David Production",
+    "duration": "23-24",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088731/jojosBizarreAdventure_ma8ilq.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2359704/"
+  },
+  {
+    "title": "Naruto",
+    "year": "2002-2007",
+    "synopsis": "Naruto Uzumaki, a young ninja with a sealed demon fox inside him, dreams of becoming Hokage to gain the village’s respect. With determination and powerful bonds, he faces dangerous enemies and learns the true strength of friendship.",
+    "studio": "Studio Pierrot",
+    "duration": "23-24",
+    "imdb": 8.4,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088733/naruto_ivmjis.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0409591/"
+  },
+
+  {
+    "title": "Dragon Ball Z",
+    "year": "1996-2003",
+    "synopsis": "Earth's greatest warrior, Goku, defends the planet against powerful foes—from space tyrants to androids. With epic battles, Saiyan transformations, and fierce loyalty, DBZ redefined action anime for generations to come.",
+    "studio": "Toei Animation",
+    "duration": "23-24",
+    "imdb": 8.8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088719/dragonBallZ_jlp8iv.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0214341/"
+  },
+
+  {
+    "title": "Jujutsu Kaisen",
+    "year": "2020-",
+    "synopsis": "Yuji Itadori swallows a cursed finger to save his friends, becoming host to a powerful demon. Enrolled in a secret sorcery school, he battles deadly curses while uncovering a dark world of magic, monsters, and moral complexity.",
+    "studio": "MAPPA",
+    "duration": "23-24",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088792/jujutsuKaisen_iz8hc0.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt12343534/"
+  },
+
+  {
+    "title": "Castlevania",
+    "year": "2017-2021",
+    "synopsis": "Monster hunter Trevor Belmont, a sorceress, and a vampire forge an uneasy alliance to battle Dracula, who seeks revenge on humanity. Based on the video game, this gothic tale is bloody, emotional, and deeply atmospheric.",
+    "studio": "Powerhouse Animation Studios",
+    "duration": "23-25",
+    "imdb": 8.3,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088729/castlevania_mz20dr.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt6517102/"
+  },
+
+  {
+    "title": "Dr. Stone",
+    "year": "2019-",
+    "synopsis": "After humanity is mysteriously petrified, genius teen Senku wakes up thousands of years later. Using science and wit, he vows to rebuild civilization from scratch, one invention at a time, in a thrilling blend of brains and survival.",
+    "studio": "TMS Entertainment",
+    "duration": "23-24",
+    "imdb": 8.1,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088762/drStone_xegpzt.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt9679542/"
+  },
+
+  {
+    "title": "Hunter x Hunter",
+    "year": "2011-2014",
+    "synopsis": "Gon Freecss becomes a Hunter to find his absent father and explore the world. Alongside friends Killua, Leorio, and Kurapika, he faces dangerous trials, complex villains, and moral dilemmas that challenge what it means to be strong.",
+    "studio": "Madhouse",
+    "duration": "23-24",
+    "imdb": 9.0,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088728/hunterXHunter_f8jee2.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2098220/"
+  },
+
+  {
+    "title": "Demon Slayer",
+    "year": "2019-",
+    "synopsis": "After his family is slaughtered and his sister turned into a demon, Tanjiro joins the Demon Slayer Corps. With a burning will and blade in hand, he battles powerful demons to avenge his family and save his sister’s humanity.",
+    "studio": "ufotable",
+    "duration": "23-24",
+    "imdb": 8.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088765/demonSlayer_hezs0q.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt9335498/"
+  },
+
+  {
+    "title": "Mob Psycho 100",
+    "year": "2016-2022",
+    "synopsis": "Shigeo “Mob” Kageyama is a powerful psychic trying to live a normal life. But when emotions run high, so does his power. Torn between self-control and overwhelming force, Mob must discover who he truly wants to be.",
+    "studio": "Bones",
+    "duration": "23-24",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088764/mobPsycho100_bqq5dj.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt5897304/"
+  },
+
+  {
+    "title": "Tenkû Shinpan",
+    "year": "2021",
+    "synopsis": "Trapped in a world of towering skyscrapers and masked killers, high schooler Yuri fights to survive. As she searches for her brother and the truth, she faces brutal choices in a deadly game ruled by chaos and control.",
+    "studio": "Zero-G",
+    "duration": "23-24",
+    "imdb": 6.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088728/highRiseInvasion_cl7nn8.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt13352232/"
+  },
+
+  {
+    "title": "One Punch Man",
+    "year": "2015-",
+    "synopsis": "Saitama’s unmatched strength lets him defeat any foe with a single punch—leaving him bored and unfulfilled. In a world full of monsters and heroes, he searches for meaning, excitement, and a true challenge worthy of his power.",
+    "studio": "Madhouse • J.C.Staff",
+    "duration": "23-24",
+    "imdb": 8.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088734/onePunchMan_yfooqf.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt4508902/"
+  },
+  {
+    "title": "Vinland Saga",
+    "year": "2019-2023",
+    "synopsis": "Thorfinn, a young Viking warrior, seeks revenge on the man who killed his father. Amid brutal battles and shifting allegiances, he grapples with the meaning of honor, vengeance, and the pursuit of a true paradise—Vinland.",
+    "studio": "Wit Studio • MAPPA",
+    "duration": "23-24",
+    "imdb": 8.8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088764/vinlandSaga_e7dr82.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt10233448/"
+  },
+
+  {
+    "title": "Baki",
+    "year": "2016-2020",
+    "synopsis": "Baki Hanma trains relentlessly to surpass his monstrous father, the strongest fighter alive. Facing deadly martial artists from around the world, Baki battles through brutal underground matches fueled by pain, pride, and raw power.",
+    "studio": "TMS Entertainment",
+    "duration": "23-24",
+    "imdb": 6.8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088716/baki_c4kvhh.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt6357658/"
+  },
+
+  {
+    "title": "Yu-Gi-Oh!",
+    "year": "2000-2006",
+    "synopsis": "Yugi, a shy teen, awakens the spirit of an ancient Pharaoh through a mystical puzzle. Together, they face shadow games and sinister opponents in high-stakes duels, where every card could mean victory—or total defeat.",
+    "studio": "Studio Gallop",
+    "duration": "23-24",
+    "imdb": 7.3,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088794/yuGiOh_jw61vn.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0249327/"
+  },
+
+  {
+    "title": "Pokémon",
+    "year": "1997-2023",
+    "synopsis": "Aspiring Pokémon Master Ash Ketchum travels the world with Pikachu and friends to catch creatures, win battles, and earn badges. Along the way, he learns about friendship, perseverance, and the heart behind every Poké Ball.",
+    "studio": "OLM",
+    "duration": "23-24",
+    "imdb": 7.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088734/pokemon_kbfkd8.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0168366/"
+  },
+
+  {
+    "title": "Black Clover",
+    "year": "2017-2021",
+    "synopsis": "In a world where magic defines everything, Asta is born without any. With sheer will and a mysterious anti-magic grimoire, he vows to become the Wizard King, defying fate in an epic tale of rivalry, power, and unbreakable dreams.",
+    "studio": "Studio Pierrot",
+    "duration": "23-24",
+    "imdb": 8.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088718/blackClover_yj7lce.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt7441658/"
+  },
+
+  {
+    "title": "My Hero Academia",
+    "year": "2016-",
+    "synopsis": "In a world where superpowers are the norm, Izuku Midoriya is born powerless—but dreams of becoming a hero. After inheriting a legendary Quirk, he joins U.A. High to train and fight alongside classmates against rising villain threats.",
+    "studio": "Bones",
+    "duration": "23-24",
+    "imdb": 8.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088764/myHeroAcademia_pvocij.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt5626028/"
+  },
+
+  {
+    "title": "Fire Force",
+    "year": "2019-",
+    "synopsis": "Spontaneous human combustion turns people into fire demons. Shinra, a pyrokinetic with a hero complex, joins Special Fire Force Company 8 to uncover the mystery behind these infernos and his family’s tragic past.",
+    "studio": "David Production",
+    "duration": "23-24",
+    "imdb": 7.6,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088719/fireForce_nqziz2.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt9307686/"
+  },
+
+  {
+    "title": "Tokyo Revengers",
+    "year": "2021-",
+    "synopsis": "Takemichi, a 26-year-old loser, travels back to his school days to save his ex-girlfriend from a deadly gang future. With each jump through time, he rewrites fate, fighting to change the dark path of Tokyo’s underworld.",
+    "studio": "Liden Films",
+    "duration": "23-24",
+    "imdb": 7.8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088762/tokyoRevengers_n6a8dn.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt13196080/"
+  },
+
+  {
+    "title": "Samurai Champloo",
+    "year": "2004-2005",
+    "synopsis": "A brash samurai, a calm ronin, and a spunky waitress journey across Edo-era Japan in search of a samurai who smells of sunflowers. With hip-hop beats and slick swordfights, their wild adventure blends the old with the new.",
+    "studio": "Manglobe",
+    "duration": "23-24",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088793/samuraiChamploo_szunj8.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0423731/"
+  },
+
+  {
+    "title": "Fullmetal Alchemist",
+    "year": "2003-2004",
+    "synopsis": "Brothers Edward and Alphonse Elric use forbidden alchemy to resurrect their mother—at a terrible cost. Now they seek the Philosopher’s Stone to restore their bodies, facing corruption, war, and deep truths about sacrifice.",
+    "studio": "Bones",
+    "duration": "23-24",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088735/fullmetalAlchemist_lkql9s.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0421357/"
+  },
+  {
+    "title": "Initial D: First Stage",
+    "year": "1998",
+    "synopsis": "Takumi Fujiwara, a high schooler with unmatched drifting skills, unknowingly becomes a street racing legend. Behind the wheel of his father’s Toyota AE86, he conquers mountain passes and rivals in an adrenaline-fueled road saga.",
+    "studio": "Gallop • Studio Comet",
+    "duration": "23-24",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088729/initialD_pbv0ob.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0385426/"
+  },
+
+  {
+    "title": "Sailor Moon",
+    "year": "1992-1997",
+    "synopsis": "Usagi Tsukino transforms into Sailor Moon to fight evil and protect the universe. With fellow Sailor Guardians, she battles dark forces, discovers her destiny, and embraces love and friendship in a magical girl classic.",
+    "studio": "Toei Animation",
+    "duration": "23-24",
+    "imdb": 7.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088735/sailorMoon_junqlk.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0103369/"
+  },
+
+  {
+    "title": "Hajime no Ippo",
+    "year": "2000-2002",
+    "synopsis": "Bullied teen Ippo finds confidence and purpose through boxing. Guided by passion and relentless training, he climbs the ranks of Japan’s boxing world, facing fierce opponents and discovering the true heart of the sport.",
+    "studio": "Madhouse",
+    "duration": "23-24",
+    "imdb": 8.8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088727/hajimeNoIppo_a25rwe.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0481256/"
+  },
+
+  {
+    "title": "Yu Yu Hakusho",
+    "year": "1992-1995",
+    "synopsis": "After dying saving a child, delinquent Yusuke Urameshi becomes a Spirit Detective, solving supernatural cases. With spirit energy and loyal friends, he fights demons and uncovers deadly plots across realms of the living and dead.",
+    "studio": "Studio Pierrot",
+    "duration": "23-24",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088767/yuYuHakusho_vpklq9.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0185133/"
+  },
+
+  {
+    "title": "Hellsing Ultimate",
+    "year": "2006-2012",
+    "synopsis": "Vampire Alucard serves the Hellsing Organization to battle the undead and supernatural threats. As war erupts against Nazi vampires and ancient horrors, he unleashes terrifying power in a dark, blood-soaked fight for survival.",
+    "studio": "Satelight • Madhouse • Graphinica",
+    "duration": "40-50",
+    "imdb": 8.2,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088766/hellsingUltimate_qtcgay.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0495212/"
+  },
+
+  {
+    "title": "Inuyasha",
+    "year": "2000-2004",
+    "synopsis": "Kagome, a modern girl, falls into a well and ends up in feudal Japan, where she meets half-demon Inuyasha. Together, they search for shards of a sacred jewel, battling demons and unraveling a tragic, time-crossed love story.",
+    "studio": "Sunrise",
+    "duration": "23-24",
+    "imdb": 7.9,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088765/inuyasha_mljdsj.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0290223/"
+  },
+
+  {
+    "title": "Great Teacher Onizuka",
+    "year": "1999-2000",
+    "synopsis": "Eikichi Onizuka, a former gangster turned teacher, takes on the toughest class in school. Using unorthodox methods, he teaches life lessons with humor and heart, determined to connect with students no one else could reach.",
+    "studio": "Studio Pierrot",
+    "duration": "23-24",
+    "imdb": 8.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088766/greatTeacherOnizuka_juemav.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0315008/"
+  },
+
+  {
+    "title": "Perfect Blue",
+    "year": "1997",
+    "synopsis": "Mima, a pop idol turned actress, spirals into paranoia as a stalker and her own reflection blur fantasy and reality. This psychological thriller delves deep into identity, fame, and the terrifying cost of losing control.",
+    "studio": "Madhouse",
+    "duration": "81",
+    "imdb": 8,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088792/perfectBlue_igxsxs.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0156887/"
+  },
+
+  {
+    "title": "Tenshi no tamago",
+    "year": "1985",
+    "synopsis": "In a desolate, dreamlike world, a girl guards a mysterious egg. When a silent soldier appears, they journey through eerie ruins. With haunting visuals and minimal dialogue, this surreal tale explores faith, loss, and rebirth.",
+    "studio": "Studio DEEN",
+    "duration": "71",
+    "imdb": 7.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088710/angelsEgg_b2b4vd.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0208502/"
+  },
+
+  {
+    "title": "Mirai nikki",
+    "year": "2011-2013",
+    "synopsis": "Yukiteru gains a diary that predicts the future and is forced into a deadly survival game. Partnered with the obsessive and dangerous Yuno, he must outwit eleven other diary holders to become the new god of time and space.",
+    "studio": "Asread",
+    "duration": "23-24",
+    "imdb": 7.4,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088761/miraiNikki_cf1983.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2069441/"
+  },
+  {
+    "title": "Ano hi mita hana no namae o bokutachi wa mada shiranai",
+    "year": "2011",
+    "synopsis": "A group of childhood friends drifts apart after a tragic accident. Years later, the ghost of their lost friend appears, urging them to confront guilt, grief, and the bond they thought was broken forever.",
+    "studio": "A-1 Pictures",
+    "duration": "23-24",
+    "imdb": 8.1,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088732/anoHana_q8oocu.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt1913273/"
+  },
+
+  {
+    "title": "Attack on Titan",
+    "year": "2013-2023",
+    "synopsis": "Humanity fights extinction behind massive walls, threatened by man-eating Titans. When Eren gains Titan powers, he and his friends uncover shocking truths that will change everything about their world and what it means to be free.",
+    "studio": "Wit Studio • MAPPA",
+    "duration": "23-24",
+    "imdb": 9.1,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088736/attackOnTitan_twwbrs.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt2560140/"
+  },
+
+  {
+    "title": "Slam Dunk",
+    "year": "1993-1996",
+    "synopsis": "Delinquent Hanamichi Sakuragi joins his high school basketball team to impress a girl, only to discover a passion for the sport. Through fierce rivals and personal growth, he rises as a powerful player with raw potential.",
+    "studio": "Toei Animation",
+    "duration": "23-24",
+    "imdb": 8.7,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088793/slamDunk_oalkd8.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0965547/"
+  },
+
+  {
+    "title": "Black Lagoon",
+    "year": "2006",
+    "synopsis": "Rock, a businessman turned mercenary, joins the Lagoon Company—smugglers in Southeast Asia’s criminal underworld. With brutal action, moral ambiguity, and razor-sharp dialogue, this gritty anime dives deep into human darkness.",
+    "studio": "Madhouse",
+    "duration": "23-24",
+    "imdb": 7.9,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088732/blackLagoon_bzwncw.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt0962826/"
+  },
+
+  {
+    "title": "Michiko to Hatchin",
+    "year": "2008-2009",
+    "synopsis": "Fugitive Michiko breaks out of prison to reunite with a girl named Hatchin. Chased by the law and haunted by their pasts, the duo embarks on a wild road trip across a vibrant, chaotic South American-inspired world.",
+    "studio": "Manglobe",
+    "duration": "23-24",
+    "imdb": 7.5,
+    "image": "https://res.cloudinary.com/thecultclub/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:best,e_sharpen,e_auto_contrast/v1744088791/michikoEHatchin_y4imrn.jpg",
+    "imdbLink": "https://www.imdb.com/title/tt1324968/"
+  }
+]

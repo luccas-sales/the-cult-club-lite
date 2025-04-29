@@ -44,6 +44,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: var(--gradient-backgroud);
+    animation: fadeIn 1s ease-in-out;
 }
 
 header {
@@ -53,11 +54,6 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 1;
-}
-
-header,
-main {
-    animation: fadeIn 1s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -96,7 +92,7 @@ h2 {
     align-items: center;
     height: 3.5rem;
     width: 35rem;
-    margin: 2rem;
+    margin: 5rem;
     position: relative;
 }
 
@@ -204,7 +200,7 @@ h2 {
     width: 100%;
     height: 100vh;
     z-index: 5;
-    backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.25rem);
 }
 
 .card-search {

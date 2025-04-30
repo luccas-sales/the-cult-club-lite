@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
   let previousFeedbackCardsDatas =
     JSON.parse(localStorage.getItem('previousFeedbackCardsDatas')) || [];
 
+  const notification = document.querySelector('.notification');
+  const notificationTitle = document.querySelector('.notification-title');
+  const notificationIcon = document.querySelector('.notification-icon');
+  const notificationClose = document.querySelector('.notification-close');
+
   function renderFeedbackCard(containerId, cardData) {
     const container = document.getElementById(containerId);
 
@@ -22,31 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
         </button>
       </div>
     `;
-  }
-
-  for (const feedbackCardInfo of previousFeedbackCardsDatas) {
-    const containerId =
-      feedbackCardInfo.feedbackType === 'Hated'
-        ? 'hated-container'
-        : 'liked-container';
-    renderFeedbackCard(containerId, feedbackCardInfo);
-  }
-
-  function cardExists(movieData) {
-    const allCards = document.querySelectorAll('.card-feedback');
-
-    return Array.from(allCards).some((card) => {
-      const title = card.querySelector('h3')?.textContent.trim();
-      const type = card.querySelector('p')?.textContent.trim();
-      const image =
-        card.querySelector('.card-pic-feedback')?.style.backgroundImage;
-
-      return (
-        title === movieData.title &&
-        type === movieData.type &&
-        image.includes(movieData.image)
-      );
-    });
   }
 
   function feedbackButton(
@@ -83,14 +63,31 @@ document.addEventListener('DOMContentLoaded', function () {
       const title = name.childNodes[0].textContent.trim();
       const type = typeEl.textContent.trim();
 
-      const feedbackCardData = {
+      let feedbackCardData = {
         image: backgroundImage,
         title: title,
         type: type,
         feedbackType: feedbackType,
       };
 
-      if (!cardExists(feedbackCardData)) {
+      const existingCardIndex = previousFeedbackCardsDatas.findIndex(
+        (item) =>
+          item.title === feedbackCardData.title &&
+          item.type === feedbackCardData.type &&
+          item.image === feedbackCardData.image
+      );
+
+      if (existingCardIndex !== -1) {
+        previousFeedbackCardsDatas[existingCardIndex].feedbackType =
+          feedbackType;
+
+        localStorage.setItem(
+          'previousFeedbackCardsDatas',
+          JSON.stringify(previousFeedbackCardsDatas)
+        );
+
+        renderAllFeedbackCards();
+      } else {
         renderFeedbackCard(containerId, feedbackCardData);
         previousFeedbackCardsDatas.push(feedbackCardData);
         localStorage.setItem(
@@ -98,29 +95,86 @@ document.addEventListener('DOMContentLoaded', function () {
           JSON.stringify(previousFeedbackCardsDatas)
         );
       }
+
+      if (buttonId === 'like-button') {
+        selectedCard.classList.remove('hated');
+        selectedCard.classList.add('liked');
+      } else {
+        selectedCard.classList.remove('liked');
+        selectedCard.classList.add('hated');
+      }
+
+      notification.style.backgroundColor =
+        feedbackType === 'liked' ? '#d1fae5' : '#fee2e2';
+      notification.style.borderLeft =
+        feedbackType === 'liked' ? '4px solid #22c55e' : '4px solid #ef4444';
+      notificationTitle.style.color =
+        feedbackType === 'liked' ? '#064e3b' : '#7f1d1d';
+      notificationIcon.style.color =
+        feedbackType === 'liked' ? '#22c55e' : '#ef4444';
+      notificationClose.style.color =
+        feedbackType === 'liked' ? '#064e3b' : '#7f1d1d';
+      notificationIcon.innerHTML =
+        feedbackType === 'liked'
+          ? '<i class="bi bi-hand-thumbs-up-fill"></i>'
+          : '<i class="bi bi-hand-thumbs-down-fill"></i>';
+      notificationTitle.innerText =
+        feedbackType === 'liked'
+          ? `Your card has been added to the "Liked It list".`
+          : `Your card has been added to the "Hated It list".`;
+
+      notification.classList.remove('notification-visible');
+      void notification.offsetWidth;
+      notification.classList.add('notification-visible');
+
+      clearTimeout(notification.hideTimeout);
+      notification.hideTimeout = setTimeout(() => {
+        notification.classList.remove('notification-visible');
+      }, 2000);
+
+      notificationClose.addEventListener('click', function (event) {
+        notification.classList.remove('notification-visible');
+      });
     });
   }
 
+  function renderAllFeedbackCards() {
+    const likedContainer = document.getElementById('liked-container');
+    const hatedContainer = document.getElementById('hated-container');
+    likedContainer.innerHTML = '';
+    hatedContainer.innerHTML = '';
+
+    for (const feedbackCardInfo of previousFeedbackCardsDatas) {
+      const containerId =
+        feedbackCardInfo.feedbackType === 'hated'
+          ? 'hated-container'
+          : 'liked-container';
+      renderFeedbackCard(containerId, feedbackCardInfo);
+    }
+  }
+
+  renderAllFeedbackCards();
+
   feedbackButton(
     '.card-movie',
     '.card-pic-movie',
     'like-button',
     'liked-container',
-    'Liked'
+    'liked'
   );
   feedbackButton(
     '.card-serie',
     '.card-pic-serie',
     'like-button',
     'liked-container',
-    'Liked'
+    'liked'
   );
   feedbackButton(
     '.card-anime',
     '.card-pic-anime',
     'like-button',
     'liked-container',
-    'Liked'
+    'liked'
   );
 
   feedbackButton(
@@ -128,21 +182,21 @@ document.addEventListener('DOMContentLoaded', function () {
     '.card-pic-movie',
     'deslike-button',
     'hated-container',
-    'Hated'
+    'hated'
   );
   feedbackButton(
     '.card-serie',
     '.card-pic-serie',
     'deslike-button',
     'hated-container',
-    'Hated'
+    'hated'
   );
   feedbackButton(
     '.card-anime',
     '.card-pic-anime',
     'deslike-button',
     'hated-container',
-    'Hated'
+    'hated'
   );
 
   document.addEventListener('click', function (event) {
@@ -151,12 +205,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const cardFeedback = removeButton.closest('.card-feedback');
     if (!cardFeedback) return;
-    
-    const title = cardFeedback?.querySelector('h3')?.textContent.trim();
-    const type = cardFeedback?.querySelector('p')?.textContent.trim();
+
+    const title = cardFeedback.querySelector('h3').textContent.trim();
+    const type = cardFeedback.querySelector('p').textContent.trim();
     const imageStyle =
-      cardFeedback?.querySelector('.card-pic-feedback')?.style.backgroundImage;
-    const imageMatch = imageStyle?.match(/url\(["']?(.*?)["']?\)/);
+      cardFeedback.querySelector('.card-pic-feedback').style.backgroundImage;
+    const imageMatch = imageStyle.match(/url\(["']?(.*?)["']?\)/);
     const image = imageMatch ? imageMatch[1] : '';
 
     previousFeedbackCardsDatas = previousFeedbackCardsDatas.filter((item) => {
@@ -167,7 +221,27 @@ document.addEventListener('DOMContentLoaded', function () {
       );
     });
 
-    cardFeedback?.remove();
+    cardFeedback.remove();
+
+    const allCards = document.querySelectorAll(
+      '.card-movie, .card-serie, .card-anime'
+    );
+    allCards.forEach((card) => {
+      const cardName = card
+        .querySelector('.name')
+        .childNodes[0].textContent.trim();
+      const cardType = card.querySelector('.list-title').textContent.trim();
+      const cardPic = card.querySelector(
+        '.card-pic-movie, .card-pic-serie, .card-pic-anime'
+      );
+      const cardImageStyle = cardPic.style.backgroundImage;
+      const cardImageMatch = cardImageStyle.match(/url\(["']?(.*?)["']?\)/);
+      const cardImage = cardImageMatch ? cardImageMatch[1] : '';
+
+      if (cardName === title && cardType === type && cardImage === image) {
+        card.classList.remove('liked', '.hated');
+      }
+    });
 
     localStorage.setItem(
       'previousFeedbackCardsDatas',

@@ -15,6 +15,10 @@
     --color-background-dark: rgba(121, 85, 72, 0.5);
     --color-text-light: #dbcdba;
     --color-text-dark: #8e6b57;
+    --liked-light: #88c4a1;
+    --hated-light: #d96a6a;
+    --liked-dark: #6b8e6c;
+    --hated-dark: #8e4f4f;
 
     /* Gradientes */
     --gradient-backgroud: linear-gradient(to bottom, #e48a9c, #d96f83);
@@ -235,54 +239,51 @@ h2 {
     pointer-events: all;
 }
 
-.error-search {
+.notification {
     position: fixed;
     bottom: 5rem;
     right: 5rem;
-    width: 25rem;
+    width: 30rem;
     padding: 1.2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    background: #EF665B;
     border-radius: 0.8rem;
     box-shadow: 0rem 0rem 0.5rem -0.3rem #111;
     z-index: 5;
     visibility: hidden;
 }
 
-.error-search-visible {
-    animation: fadeIn 1s ease-in-out;
+.notification-visible {
     visibility: visible;
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 1s;
 }
 
-.error-icon {
-    width: 2rem;
-    height: 2rem;
-    transform: translateY(-0.2rem);
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.95);
+        pointer-events: none;
+    }
+}
+
+.notification-icon {
+    color: #fff;
+    font-size: 2rem;
     margin-right: 0.8rem;
 }
 
-.error-icon path {
-    fill: #fff;
-}
-
-.error-title {
+.notification-title {
     font-weight: 500;
     font-size: 1.4rem;
-    color: #fff;
 }
 
-.error-close {
-    width: 2rem;
-    height: 2rem;
+.notification-close {
+    font-size: 2rem;
     cursor: pointer;
     margin-left: auto;
-}
-
-.error-close path {
-    fill: #fff;
 }
 
 /* Slider */
@@ -343,6 +344,7 @@ h2 {
 }
 
 /* Cards */
+/* Estilos base dos cards (mantendo os existentes) */
 .card-movie,
 .card-serie,
 .card-anime {
@@ -358,15 +360,106 @@ h2 {
     background-color: var(--color-accent);
     box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
     border-radius: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .card-movie:hover,
 .card-serie:hover,
 .card-anime:hover {
     transform: scale(1.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0rem 0.5rem 1rem var(--shadow-hover);
+}
+
+.card-movie.liked,
+.card-serie.liked,
+.card-anime.liked {
+    background-color: var(--liked-light);
+    box-shadow: 0 0.5rem 1rem rgba(34, 197, 94, 0.2);
+}
+
+.card-movie.liked::after,
+.card-serie.liked::after,
+.card-anime.liked::after {
+    content: '✓ Liked it';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #22c55e;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-movie.hated,
+.card-serie.hated,
+.card-anime.hated {
+    background-color: var(--hated-light);
+    box-shadow: 0 0.5rem 1rem rgba(239, 68, 68, 0.2);
+}
+
+.card-movie.hated::after,
+.card-serie.hated::after,
+.card-anime.hated::after {
+    content: '✗ Hated it';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ef4444;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Efeitos hover específicos para cada estado */
+.card-movie.liked:hover,
+.card-serie.liked:hover,
+.card-anime.liked:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(34, 197, 94, 0.3);
+}
+
+.card-movie.hated:hover,
+.card-serie.hated:hover,
+.card-anime.hated:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(239, 68, 68, 0.3);
+}
+
+.card-movie.liked .card-pic-movie,
+.card-serie.liked .card-pic-serie,
+.card-anime.liked .card-pic-anime,
+.card-movie.hated .card-pic-movie,
+.card-serie.hated .card-pic-serie,
+.card-anime.hated .card-pic-anime {
+    position: relative;
+}
+
+.card-movie.liked .card-pic-movie::before,
+.card-serie.liked .card-pic-serie::before,
+.card-anime.liked .card-pic-anime::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34, 197, 94, 0.1);
+    z-index: 1;
+}
+
+.card-movie.hated .card-pic-movie::before,
+.card-serie.hated .card-pic-serie::before,
+.card-anime.hated .card-pic-anime::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(239, 68, 68, 0.1);
+    z-index: 1;
 }
 
 .card-pic-movie,
@@ -640,7 +733,7 @@ h2 {
     left: 25%;
     transform: translateX(-50%);
     font-size: 3.5rem;
-    z-index: 1;
+    z-index: 2;
     white-space: nowrap;
 }
 
@@ -654,7 +747,7 @@ h2 {
     left: 75%;
     transform: translateX(-50%);
     font-size: 3.5rem;
-    z-index: 1;
+    z-index: 2;
     white-space: nowrap;
 }
 
@@ -674,6 +767,7 @@ h2 {
     padding: 2rem 1.5rem;
 }
 
+
 #liked-container {
     background: linear-gradient(to bottom, rgba(152, 179, 152, 0.3), rgba(112, 139, 112, 0.7));
 }
@@ -692,19 +786,13 @@ h2 {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: var(--color-accent);
-    box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
     border-radius: 1rem;
     padding: 1rem;
     width: 15rem;
     height: 20rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-feedback:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0rem 0.5rem 1rem var(--shadow-hover);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .card-feedback h3 {
@@ -713,12 +801,35 @@ h2 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    z-index: 1;
 }
-
 
 .card-feedback p {
     font-weight: 600;
     text-decoration: overline;
+    z-index: 1;
+}
+
+#liked-container .card-feedback {
+    background-color: var(--liked-light);
+    box-shadow: 0 0.2rem 0.5rem rgba(34, 197, 94, 0.1);
+}
+
+#liked-container .card-feedback:hover {
+    box-shadow: 0 0.5rem 1rem rgba(34, 197, 94, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#hated-container .card-feedback {
+    background-color: var(--hated-light);
+    box-shadow: 0 0.2rem 0.5rem rgba(239, 68, 68, 0.1);
+}
+
+#hated-container .card-feedback:hover {
+    box-shadow: 0 0.5rem 1rem rgba(239, 68, 68, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-pic-feedback {
@@ -729,6 +840,32 @@ h2 {
     background-repeat: no-repeat;
     align-self: center;
     border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.card-feedback::after {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    z-index: 2;
+}
+
+#liked-container .card-feedback::after {
+    content: '✓';
+    background-color: #22c55e;
+    color: white;
+}
+
+#hated-container .card-feedback::after {
+    content: '✗';
+    background-color: #ef4444;
+    color: white;
 }
 
 /* FeedBack Button */
@@ -742,8 +879,15 @@ h2 {
     border: none;
     border-radius: 0.5rem;
     box-shadow: 0.1rem 0.1rem 0.3rem var(--shadow-light);
-    background-color: var(--color-text-dark);
-    color: var(--color-text-light);
+    color: var(--color-light);
+}
+
+#liked-container #remove-feedback-btn {
+    background-color: var(--liked-dark);
+}
+
+#hated-container #remove-feedback-btn {
+    background-color: var(--hated-dark);
 }
 
 #remove-feedback-btn,
@@ -758,7 +902,7 @@ h2 {
 
 #remove-feedback-btn .icon {
     position: absolute;
-    border-left: 0.1rem solid var(--color-text-light);
+    border-left: 0.1rem solid var(--color-light);
     transform: translateX(9rem);
     height: 1.5rem;
     width: 4rem;
@@ -771,11 +915,11 @@ h2 {
     margin-top: 0.2rem;
     width: 1.5rem;
     height: 100%;
-    fill: var(--color-text-light);
+    fill: var(--color-light);
 }
 
 #remove-feedback-btn:hover {
-    background: var(--color-text-light);
+    background: var(--color-light);
 }
 
 #remove-feedback-btn:hover .text {
@@ -788,17 +932,12 @@ h2 {
     transform: translateX(0);
 }
 
-#remove-feedback-btn:hover .icon svg {
-    fill: var(--color-text-dark);
-}
-
 #remove-feedback-btn:focus {
     outline: none;
 }
 
 #remove-feedback-btn:active .icon svg {
     transform: scale(0.8);
-    fill: var(--color-text-dark);
 }
 
 /* Footer */

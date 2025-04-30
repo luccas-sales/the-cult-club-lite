@@ -37,6 +37,16 @@ document.addEventListener('DOMContentLoaded', async function () {
       const card = document.createElement('li');
       card.classList.add(`card-${type}`);
 
+      const latestFeedback =
+        JSON.parse(localStorage.getItem('previousFeedbackCardsDatas')) || [];
+      const feedbackItem = latestFeedback.find(
+        (obj) => obj.title === cardData.title
+      );
+
+      if (feedbackItem) {
+        card.classList.add(feedbackItem.feedbackType);
+      }
+
       card.innerHTML = `
           <div class="list-title"><h1>${type.toUpperCase()}S</h1></div>
           <div class="card-pic-${type}" style="background-image: url('${

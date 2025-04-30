@@ -22,9 +22,10 @@ document.addEventListener('DOMContentLoaded', async function () {
   const cardSearch = document.querySelector('.card-search');
   const searchBackgroud = document.querySelector('.search-backgroud');
 
-  const errorSearch = document.querySelector('.error-search');
-  const errorTitle = document.querySelector('.error-title');
-  const errorSearchClose = document.querySelector('.error-close');
+  const notification = document.querySelector('.notification');
+  const notificationTitle = document.querySelector('.notification-title');
+  const notificationIcon = document.querySelector('.notification-icon');
+  const notificationClose = document.querySelector('.notification-close');
 
   function normalizeText(text) {
     return text
@@ -98,15 +99,30 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
 
       searchInput.value = '';
-      errorSearch.classList.remove('error-search-visible');
+      notification.classList.remove('notification-visible');
     } catch (error) {
-      errorTitle.innerText = `${error.message}`;
-      errorSearch.classList.add('error-search-visible');
+      notification.style.backgroundColor = '#fef08a';
+      notification.style.borderLeft = '4px solid #f59e0b';
+      notificationTitle.style.color = '#b45309';
+      notificationIcon.style.color = '#f59e0b';
+      notificationClose.style.color = '#b45309';
+      notificationIcon.innerHTML =
+        '<i class="bi bi-exclamation-circle-fill"></i>';
+      notificationTitle.innerText = `${error.message}`;
+
+      notification.classList.remove('notification-visible');
+      void notification.offsetWidth;
+      notification.classList.add('notification-visible');
+
+      clearTimeout(notification.hideTimeout);
+      notification.hideTimeout = setTimeout(() => {
+        notification.classList.remove('notification-visible');
+      }, 2000);
     }
   });
 
-  errorSearchClose.addEventListener('click', function (event) {
-    errorSearch.classList.remove('error-search-visible');
+  notificationClose.addEventListener('click', function (event) {
+    notification.classList.remove('notification-visible');
   });
 
   searchBackgroud.addEventListener('click', function (event) {

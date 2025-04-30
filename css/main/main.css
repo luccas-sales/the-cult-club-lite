@@ -251,7 +251,7 @@ h2 {
     justify-content: start;
     border-radius: 0.8rem;
     box-shadow: 0rem 0rem 0.5rem -0.3rem #111;
-    z-index: 5;
+    z-index: 10;
     visibility: hidden;
 }
 

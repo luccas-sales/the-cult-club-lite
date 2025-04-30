@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const cardImage = cardImageMatch ? cardImageMatch[1] : '';
 
       if (cardName === title && cardType === type && cardImage === image) {
-        card.classList.remove('liked', '.hated');
+        card.classList.remove('liked', 'hated');
       }
     });
 

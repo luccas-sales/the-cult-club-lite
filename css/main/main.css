@@ -733,7 +733,7 @@ h2 {
     left: 25%;
     transform: translateX(-50%);
     font-size: 3.5rem;
-    z-index: 2;
+    z-index: 5;
     white-space: nowrap;
 }
 
@@ -747,7 +747,7 @@ h2 {
     left: 75%;
     transform: translateX(-50%);
     font-size: 3.5rem;
-    z-index: 2;
+    z-index: 5;
     white-space: nowrap;
 }
 

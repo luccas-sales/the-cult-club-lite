@@ -77,18 +77,6 @@ h2 {
     padding: 5rem 0rem;
 }
 
-#home.hidden {
-    opacity: 0;
-    transform: scale(0.95);
-    transition: all 3s ease;
-}
-
-#home.show {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 3s ease;
-}
-
 /*Header input*/
 .search-container {
     display: flex;
@@ -307,9 +295,20 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.5);
     gap: 25rem;
     pointer-events: none;
+}
+
+#slider.hidden {
+    opacity: 0;
+    transform: scale(0.45);
+    transition: all 3s ease;
+}
+
+#slider.show {
+    opacity: 1;
+    transform: scale(0.5);
+    transition: all 3s ease;
 }
 
 .list {
@@ -524,7 +523,7 @@ h2 {
 .card-movie .name .release-year,
 .card-serie .name .release-year,
 .card-anime .name .release-year,
-.card-search-inner .name .realease-year {
+.card-search-inner .name .release-year {
     font-size: 1.2rem;
     padding: 0.2rem;
     font-weight: bold;
@@ -643,6 +642,25 @@ h2 {
     position: absolute;
     filter: drop-shadow(0rem 0rem 0.2rem rgba(0, 0, 0, 0.5));
     pointer-events: none;
+}
+
+#btn-navegation-left.hidden {
+    opacity: 0;
+    transform: translateX(-1rem);
+    transition: all 3s ease;
+}
+
+#btn-navegation-right.hidden {
+    opacity: 0;
+    transform: translateX(1rem);
+    transition: all 3s ease;
+}
+
+#btn-navegation-left.show,
+#btn-navegation-right.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 3s ease;
 }
 
 #btn-navegation-left,

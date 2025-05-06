@@ -175,8 +175,16 @@
         transform: scale(0.7);
     }
 
-    #slider {
+    #slider.hidden {
+        opacity: 0;
+        transform: scale(0.30);
+        transition: all 3s ease;
+    }
+
+    #slider.show {
+        opacity: 1;
         transform: scale(0.35);
+        transition: all 3s ease;
     }
 
     .btns-navegation {

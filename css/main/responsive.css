@@ -171,6 +171,19 @@
         width: 30rem;
     }
 
+    .notification {
+        right: auto;
+        /* Remove o alinhamento à direita do desktop */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translateX(-50%);
+        /* Ajuste fino para centralização perfeita */
+        width: 90%;
+        /* Ocupa 90% da tela (melhor responsividade) */
+        max-width: 30rem;
+        /* Mantém a largura máxima */
+    }
+
     .card-search {
         transform: scale(0.7);
     }

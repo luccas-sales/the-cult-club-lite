@@ -136,14 +136,6 @@
         transition: none !important;
     }
 
-    #like-button::before {
-        background-color: #113311;
-    }
-
-    #deslike-button::before {
-        background-color: #441111;
-    }
-
     .feedback-btn:hover::before {
         width: 4rem !important;
         height: 4rem !important;
@@ -173,15 +165,10 @@
 
     .notification {
         right: auto;
-        /* Remove o alinhamento à direita do desktop */
         left: 50%;
-        /* Centraliza horizontalmente */
         transform: translateX(-50%);
-        /* Ajuste fino para centralização perfeita */
         width: 90%;
-        /* Ocupa 90% da tela (melhor responsividade) */
         max-width: 30rem;
-        /* Mantém a largura máxima */
     }
 
     .card-search {

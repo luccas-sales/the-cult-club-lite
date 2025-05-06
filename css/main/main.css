@@ -48,7 +48,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: var(--gradient-backgroud);
-    animation: fadeIn 1s ease-in-out;
 }
 
 header {
@@ -60,17 +59,6 @@ header {
     z-index: 1;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 h1,
 h2 {
@@ -89,6 +77,18 @@ h2 {
     padding: 5rem 0rem;
 }
 
+#home.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 3s ease;
+}
+
+#home.show {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 3s ease;
+}
+
 /*Header input*/
 .search-container {
     display: flex;
@@ -98,6 +98,18 @@ h2 {
     width: 35rem;
     margin: 5rem;
     position: relative;
+}
+
+.search-container.hidden {
+    opacity: 0;
+    transform: translateY(-2rem);
+    transition: all 3s ease;
+}
+
+.search-container.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 3s ease;
 }
 
 .input-wrapper {
@@ -208,6 +220,7 @@ h2 {
 }
 
 .card-search {
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,22 +233,22 @@ h2 {
     user-select: none;
 }
 
-.card-search .card-movie,
-.card-search .card-serie,
-.card-search .card-anime {
-    font-family: 'Times New Roman', Times, serif;
+.card-search-inner {
+    opacity: 0;
+    transition: all 3s ease;
 }
 
-.card-search .card-movie:hover,
-.card-search .card-serie:hover,
-.card-search .card-anime:hover {
+.card-search-inner.show {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.card-search .card-search-inner:hover {
     transform: none;
     box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
 }
 
-.card-search .card-movie .info .synopsis,
-.card-search .card-serie .info .synopsis,
-.card-search .card-anime .info .synopsis {
+.card-search .card-search-inner .info .synopsis {
     pointer-events: all;
 }
 
@@ -253,12 +266,15 @@ h2 {
     box-shadow: 0rem 0rem 0.5rem -0.3rem #111;
     z-index: 10;
     visibility: hidden;
+    opacity: 0;
 }
 
 .notification-visible {
+    opacity: 1;
+    transition: all 1s ease;
     visibility: visible;
     animation: fadeOut 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
 @keyframes fadeOut {
@@ -347,7 +363,8 @@ h2 {
 /* Estilos base dos cards (mantendo os existentes) */
 .card-movie,
 .card-serie,
-.card-anime {
+.card-anime,
+.card-search-inner {
     width: 35rem;
     height: 100%;
     display: flex;
@@ -365,21 +382,24 @@ h2 {
 
 .card-movie:hover,
 .card-serie:hover,
-.card-anime:hover {
+.card-anime:hover,
+.card-search-inner:hover {
     transform: scale(1.02);
     box-shadow: 0rem 0.5rem 1rem var(--shadow-hover);
 }
 
 .card-movie.liked,
 .card-serie.liked,
-.card-anime.liked {
+.card-anime.liked,
+.card-search-inner.liked {
     background-color: var(--liked-light);
     box-shadow: 0 0.5rem 1rem rgba(34, 197, 94, 0.2);
 }
 
 .card-movie.liked::after,
 .card-serie.liked::after,
-.card-anime.liked::after {
+.card-anime.liked::after,
+.card-search-inner.liked::after {
     content: '✓ Liked it';
     position: absolute;
     top: 1rem;
@@ -394,14 +414,16 @@ h2 {
 
 .card-movie.hated,
 .card-serie.hated,
-.card-anime.hated {
+.card-anime.hated,
+.card-search-inner.hated {
     background-color: var(--hated-light);
     box-shadow: 0 0.5rem 1rem rgba(239, 68, 68, 0.2);
 }
 
 .card-movie.hated::after,
 .card-serie.hated::after,
-.card-anime.hated::after {
+.card-anime.hated::after,
+.card-search-inner.hated::after {
     content: '✗ Hated it';
     position: absolute;
     top: 1rem;
@@ -417,28 +439,33 @@ h2 {
 /* Efeitos hover específicos para cada estado */
 .card-movie.liked:hover,
 .card-serie.liked:hover,
-.card-anime.liked:hover {
+.card-anime.liked:hover,
+.card-search-inner.liked:hover {
     box-shadow: 0 0.5rem 1.5rem rgba(34, 197, 94, 0.3);
 }
 
 .card-movie.hated:hover,
 .card-serie.hated:hover,
-.card-anime.hated:hover {
+.card-anime.hated:hover,
+.card-search-inner.hated:hover {
     box-shadow: 0 0.5rem 1.5rem rgba(239, 68, 68, 0.3);
 }
 
 .card-movie.liked .card-pic-movie,
 .card-serie.liked .card-pic-serie,
 .card-anime.liked .card-pic-anime,
+.card-search-inner.liked .card-pic-search-inner,
 .card-movie.hated .card-pic-movie,
 .card-serie.hated .card-pic-serie,
-.card-anime.hated .card-pic-anime {
+.card-anime.hated .card-pic-anime,
+.card-search-inner.hated .card-pic-search-inner {
     position: relative;
 }
 
 .card-movie.liked .card-pic-movie::before,
 .card-serie.liked .card-pic-serie::before,
-.card-anime.liked .card-pic-anime::before {
+.card-anime.liked .card-pic-anime::before,
+.card-search-inner.liked .card-pic-search-inner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -451,7 +478,8 @@ h2 {
 
 .card-movie.hated .card-pic-movie::before,
 .card-serie.hated .card-pic-serie::before,
-.card-anime.hated .card-pic-anime::before {
+.card-anime.hated .card-pic-anime::before,
+.card-search-inner.hated .card-pic-search-inner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -464,7 +492,8 @@ h2 {
 
 .card-pic-movie,
 .card-pic-serie,
-.card-pic-anime {
+.card-pic-anime,
+.card-pic-search-inner {
     position: relative;
     width: 30rem;
     height: 30rem;
@@ -484,7 +513,8 @@ h2 {
 
 .card-movie .name,
 .card-serie .name,
-.card-anime .name {
+.card-anime .name,
+.card-search-inner .name {
     font-size: 1.8rem;
     padding: 0.2rem;
     text-transform: uppercase;
@@ -493,7 +523,8 @@ h2 {
 
 .card-movie .name .release-year,
 .card-serie .name .release-year,
-.card-anime .name .release-year {
+.card-anime .name .release-year,
+.card-search-inner .name .realease-year {
     font-size: 1.2rem;
     padding: 0.2rem;
     font-weight: bold;
@@ -501,7 +532,8 @@ h2 {
 
 .card-movie .info .synopsis,
 .card-serie .info .synopsis,
-.card-anime .info .synopsis {
+.card-anime .info .synopsis,
+.card-search-inner .info .synopsis {
     padding: 0rem 1rem 1rem 0rem;
     max-height: 7rem;
     overflow-y: scroll;
@@ -513,7 +545,8 @@ h2 {
 
 .selectedList .card-movie .info .synopsis,
 .selectedList .card-serie .info .synopsis,
-.selectedList .card-anime .info .synopsis {
+.selectedList .card-anime .info .synopsis,
+.card-search-inner .card-pic-search-inner .info .synopsis {
     pointer-events: all;
 }
 
@@ -532,7 +565,8 @@ h2 {
 
 .card-movie .info,
 .card-serie .info,
-.card-anime .info {
+.card-anime .info,
+.card-search-inner .info {
     border-radius: 0.5rem;
     color: var(--color-dark);
     text-align: right;
@@ -543,7 +577,8 @@ h2 {
 
 .card-movie .info .add-info,
 .card-serie .info .add-info,
-.card-anime .info .add-info {
+.card-anime .info .add-info,
+.card-search-inner .info .add-info {
     display: flex;
     justify-content: end;
     gap: 0.5rem;
@@ -555,12 +590,16 @@ h2 {
 
 .card-movie .info .add-info span,
 .card-serie .info .add-info span,
-.card-anime .info .add-info span {
+.card-anime .info .add-info span,
+.card-search-inner .info .add-info span {
     font-size: 1.2rem;
 }
 
 .card-movie .info .add-info .actors,
-.card-anime .info .add-info .studio {
+.card-serie .info .add-info .actors,
+.card-anime .info .add-info .studio,
+.card-search-inner .info .add-info .actors,
+.card-search-inner .info .add-info .studio {
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
@@ -569,14 +608,16 @@ h2 {
 
 .card-movie .imdb-rating,
 .card-serie .imdb-rating,
-.card-anime .imdb-rating {
+.card-anime .imdb-rating,
+.card-search-inner .imdb-rating {
     display: inline-flex;
     gap: 0.5rem;
 }
 
 .card-movie .imdb-star,
 .card-serie .imdb-star,
-.card-anime .imdb-star {
+.card-anime .imdb-star,
+.card-search-inner .imdb-star {
     width: 2.0rem;
     height: 2.0rem;
     background-image: url(https://res.cloudinary.com/thecultclub/image/upload/v1744082781/starIMDB_npah4p.png);
@@ -588,7 +629,8 @@ h2 {
 
 .card-movie .imdb-star:hover,
 .card-serie .imdb-star:hover,
-.card-anime .imdb-star:hover {
+.card-anime .imdb-star:hover,
+.card-search-inner .imdb-star:hover {
     transform: scale(1.5);
 }
 
@@ -715,6 +757,15 @@ h2 {
 }
 
 .liked-vs-hated-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    gap: 2rem;
+}
+
+.liked-section,
+.hated-section {
     position: relative;
     display: flex;
     justify-content: center;
@@ -723,20 +774,26 @@ h2 {
     gap: 2rem;
 }
 
-.liked-list-feedback-title {
-    font-family: 'fontclub', serif;
-    color: #fff;
-    text-shadow: -0.2rem 0.2rem 0rem var(--shadow-dark);
-    display: inline-block;
-    position: absolute;
-    top: -5rem;
-    left: 25%;
-    transform: translateX(-50%);
-    font-size: 3.5rem;
-    z-index: 5;
-    white-space: nowrap;
+.liked-section.hidden {
+    opacity: 0;
+    transform: translateX(-5rem);
+    transition: all 3s ease;
 }
 
+.hated-section.hidden {
+    opacity: 0;
+    transform: translateX(5rem);
+    transition: all 3s ease;
+}
+
+.liked-section.show,
+.hated-section.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 3s ease;
+}
+
+.liked-list-feedback-title,
 .hated-list-feedback-title {
     font-family: 'fontclub', serif;
     color: #fff;
@@ -744,10 +801,10 @@ h2 {
     display: inline-block;
     position: absolute;
     top: -5rem;
-    left: 75%;
+    left: 50%;
     transform: translateX(-50%);
     font-size: 3.5rem;
-    z-index: 5;
+    z-index: 10;
     white-space: nowrap;
 }
 
@@ -793,6 +850,12 @@ h2 {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+}
+
+.card-feedback.show {
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 .card-feedback h3 {

@@ -27,7 +27,7 @@
 
 <body>
     <header>
-        <div class="search-container">
+        <div class="search-container hidden">
             <div class="input-wrapper">
                 <input type="text" name="text" class="input">
                 <div class="search-suggestions"></div>
@@ -39,7 +39,7 @@
     </header>
 
     <main>
-        <section id="home">
+        <section id="home" class="hidden">
             <div id="slider">
                 <ul class="series-list list"></ul>
                 <ul class="movies-list list"></ul>
@@ -73,16 +73,20 @@
 
         <section id="liked-vs-hated">
             <div class="liked-vs-hated-container">
-                <div class="liked-list-feedback-title">
-                    <h2>Liked It List</h2>
-                </div>
-                <div class="feedback-box" id="liked-container">
+                <div class="liked-section hidden">
+                    <div class="liked-list-feedback-title">
+                        <h2>Liked It List</h2>
+                    </div>
+                    <div class="feedback-box" id="liked-container">
+                    </div>
                 </div>
 
-                <div class="hated-list-feedback-title">
-                    <h2>Hated It List</i></h2>
-                </div>
-                <div class="feedback-box" id="hated-container">
+                <div class="hated-section hidden">
+                    <div class="hated-list-feedback-title">
+                        <h2>Hated It List</i></h2>
+                    </div>
+                    <div class="feedback-box" id="hated-container">
+                    </div>
                 </div>
             </div>
         </section>
@@ -94,14 +98,17 @@
                 rel="noopener noreferrer">⭐ Star on GitHub!</a></p>
     </footer>
 
-    <script src="./js/main/usernameSearch.js"></script>
-    <script src="./js/main/search.js"></script>
-
-    <script src="./js/main/changeList.js"></script>
-    <script src="./js/main/changeListBtns.js"></script>
-    <script src="./js/main/changeCards.js"></script>
-
-    <script src="./js/main/likedAndHatedBtns.js"></script>
 </body>
+
+<script src="./js/main/observerTransitions.js"></script>
+
+<script src="./js/main/usernameSearch.js"></script>
+<script src="./js/main/search.js"></script>
+
+<script src="./js/main/changeList.js"></script>
+<script src="./js/main/changeListBtns.js"></script>
+<script src="./js/main/changeCards.js"></script>
+
+<script src="./js/main/likedAndHatedBtns.js"></script>
 
 </html>

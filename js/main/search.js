@@ -65,14 +65,12 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       filteredItems.forEach((item) => {
         const card = document.createElement('li');
-        card.classList.add(`card-movie`);
+        card.classList.add(`card-search-inner`);
 
         card.innerHTML = `
-        <div class="card-pic-movie" style="background-image: url('${
+        <div class="card-pic-search-inner" style="background-image: url('${
           item.image
-        }');">
-          <img class="mouse-touch-icon">
-        </div>
+        }');"></div>
         <h2 class="name">${item.title}<span class="release-year">${
           item.year
         }</span></h2>
@@ -96,6 +94,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         </div>
       `;
         cardSearch.appendChild(card);
+
+        void card.offsetWidth;
+
+        card.classList.add('show');
       });
 
       searchInput.value = '';
@@ -117,7 +119,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       clearTimeout(notification.hideTimeout);
       notification.hideTimeout = setTimeout(() => {
         notification.classList.remove('notification-visible');
-      }, 2000);
+      }, 4000);
     }
   });
 

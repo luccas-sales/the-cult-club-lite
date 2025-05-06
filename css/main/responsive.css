@@ -104,13 +104,15 @@
 
     .card-movie,
     .card-serie,
-    .card-anime {
+    .card-anime,
+    .card-search-inner {
         transition: none !important;
     }
 
     .card-movie:hover,
     .card-serie:hover,
-    .card-anime:hover {
+    .card-anime:hover,
+    .card-search-inner:hover {
         transform: none !important;
         transition: none !important;
         box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
@@ -118,13 +120,15 @@
 
     .card-movie .imdb-star,
     .card-serie .imdb-star,
-    .card-anime .imdb-star {
+    .card-anime .imdb-star,
+    .card-search-inner .imdb-star {
         transition: none !important;
     }
 
     .card-movie .imdb-star:hover,
     .card-serie .imdb-star:hover,
-    .card-anime .imdb-star:hover {
+    .card-anime .imdb-star:hover,
+    .card-search-inner .imdb:hover {
         transform: none !important;
     }
 
@@ -164,7 +168,7 @@
 
 @media(max-width: 480px) {
     .search-container {
-        transform: scale(0.8);
+        width: 30rem;
     }
 
     .card-search {
@@ -189,19 +193,11 @@
         gap: 5rem;
     }
 
-    .liked-list-feedback-title {
+    .liked-list-feedback-title,
+    .hated-list-feedback-title {
         top: -4.5rem;
         left: 50%;
         transform: translateX(-50%);
         font-size: 3rem;
-        z-index: 1;
-    }
-
-    .hated-list-feedback-title {
-        top: 35.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 3rem;
-        z-index: 1;
     }
 }

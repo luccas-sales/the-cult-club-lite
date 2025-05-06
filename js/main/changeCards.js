@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   function changeCards(dataList, list, type) {
     let currentCard = Math.floor(Math.random() * dataList.length);
+    let tipVerification = false;
 
     function showCard(index) {
       const cardData = dataList[index];
@@ -48,11 +49,16 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
 
       card.innerHTML = `
-          <div class="list-title"><h1>${type.toUpperCase()}S</h1></div>
-          <div class="card-pic-${type}" style="background-image: url('${
+      <div class="list-title"><h1>${type.toUpperCase()}S</h1></div>
+      <div class="card-pic-${type}" style="background-image: url('${
         cardData.image
       }');">
-          </div>
+          ${
+            !tipVerification
+              ? '<div class="tip"><span>CLICK TO CHANGE</span> <i class="bi bi-arrow-repeat"></i></div>'
+              : ''
+          }
+      </div>
           <h2 class="name">${cardData.title}<span class="release-year">${
         cardData.year
       }</span></h2>
@@ -89,11 +95,26 @@ document.addEventListener('DOMContentLoaded', async function () {
       currentCard = index;
 
       const img = card.querySelector(`.card-pic-${type}`);
+      if (tipVerification === false) {
+        img.classList.add('has-tip');
+      }
+
       img.addEventListener('click', () => {
         if (!list.classList.contains('selectedList')) return;
+
+        if (!tipVerification) {
+          tipVerification = true;
+          const tip = img.querySelector('.tip');
+          if (tip) {
+            tip.remove();
+            img.style.borderImage = 'none';
+          }
+        }
+
         let nextCard = Math.floor(Math.random() * dataList.length);
-        if (nextCard === currentCard)
+        if (nextCard === currentCard) {
           nextCard = (nextCard + 1) % dataList.length;
+        }
         currentCard = nextCard;
         showCard(currentCard);
       });

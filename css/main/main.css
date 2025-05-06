@@ -521,6 +521,10 @@ h2 {
     border-image: fill 0 linear-gradient(#0001, #111);
 }
 
+.tip {
+    visibility: hidden;
+}
+
 .selectedList .tip {
     position: absolute;
     display: flex;
@@ -533,6 +537,7 @@ h2 {
     font-size: 1.2rem;
     gap: 0.5rem;
     animation: opacityAnimation 3s infinite ease-in-out;
+    visibility: visible;
 }
 
 @keyframes opacityAnimation {

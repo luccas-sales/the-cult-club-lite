@@ -75,16 +75,16 @@ document.addEventListener('DOMContentLoaded', async function () {
                 : ''
             }
             <a href="${cardData.imdbLink}" target="_blank">
-              <div class="imdb-rating">${`<span class="imdb-star"></span>`.repeat(
+              <div class="imdb-rating">${`<i class="bi bi-star-fill imdb-star"></i>`.repeat(
                 Math.round(cardData.imdb)
               )}</div>
             </a>
           </div>
           <div class="feedback-btns-container">
             <div class="feedback-btns">
-              <button class="feedback-btn" id="like-button"><img src="https://res.cloudinary.com/thecultclub/image/upload/v1744088695/like-icon_g0ivt2.png" alt="Like Icon"></button>
+              <button class="feedback-btn" id="like-button"><span class="material-symbols-outlined">thumb_up</span></button>
               <p>|</p>
-              <button class="feedback-btn" id="deslike-button"><img src="https://res.cloudinary.com/thecultclub/image/upload/v1744088694/deslike-icon_xs7fie.png" alt="Delike Icon"></button>
+              <button class="feedback-btn" id="deslike-button"><span class="material-symbols-outlined">thumb_down</span></button>
             </div>
           </div>
         `;

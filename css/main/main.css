@@ -652,19 +652,16 @@ h2 {
 .card-anime .imdb-rating,
 .card-search-inner .imdb-rating {
     display: inline-flex;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .card-movie .imdb-star,
 .card-serie .imdb-star,
 .card-anime .imdb-star,
 .card-search-inner .imdb-star {
-    width: 2.0rem;
-    height: 2.0rem;
-    background-image: url(https://res.cloudinary.com/thecultclub/image/upload/v1744082781/starIMDB_npah4p.png);
-    background-size: cover;
+    font-size: 1.5rem;
+    color: var(--color-dark);
     display: inline-block;
-    filter: brightness(0%);
     transition: all 0.3s ease;
 }
 
@@ -745,6 +742,12 @@ h2 {
     gap: 3rem;
 }
 
+.feedback-btns span {
+    font-size: 2rem;
+    color: #fff;
+    z-index: 10;
+}
+
 .feedback-btns p {
     font-family: 'Montserrat', serif;
     font-size: 1.5rem;
@@ -765,12 +768,6 @@ h2 {
     align-items: center;
     justify-content: center;
     transition: 0.1s;
-}
-
-.feedback-btn img {
-    width: 2rem;
-    height: 2rem;
-    z-index: 9;
 }
 
 #like-button {

@@ -126,7 +126,7 @@
     .card-movie .imdb-star:hover,
     .card-serie .imdb-star:hover,
     .card-anime .imdb-star:hover,
-    .card-search-inner .imdb:hover {
+    .card-search-inner .imdb-star:hover {
         transform: none !important;
     }
 

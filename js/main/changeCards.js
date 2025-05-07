@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       const response = await fetch(url);
       return await response.json();
     } catch (error) {
-      console.error('Error loading JSON data:', error);
       return [];
     }
   }
@@ -83,7 +82,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           <div class="feedback-btns-container">
             <div class="feedback-btns">
               <button class="feedback-btn" id="like-button"><span class="material-symbols-outlined">thumb_up</span></button>
-              <p>|</p>
+              <span class="material-symbols-outlined">swap_horiz</span>
               <button class="feedback-btn" id="deslike-button"><span class="material-symbols-outlined">thumb_down</span></button>
             </div>
           </div>

@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       const response = await fetch(url);
       return await response.json();
     } catch (error) {
-      console.error('Error loading JSON data:', error);
       return [];
     }
   }
@@ -67,6 +66,17 @@ document.addEventListener('DOMContentLoaded', async function () {
         const card = document.createElement('li');
         card.classList.add(`card-search-inner`);
 
+        const latestFeedback =
+          JSON.parse(localStorage.getItem('previousFeedbackCardsDatas')) || [];
+
+        const feedbackItem = latestFeedback.find(
+          (obj) => normalizeText(obj.title) === normalizeText(item.title)
+        );
+
+        if (feedbackItem) {
+          card.classList.add(feedbackItem.feedbackType);
+        }
+
         card.innerHTML = `
         <div class="card-pic-search-inner" style="background-image: url('${
           item.image
@@ -92,6 +102,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             )}</div>
           </a>
         </div>
+        <div class="feedback-btns-container">
+            <div class="feedback-btns">
+              <button class="feedback-btn" id="search-like-button"><span class="material-symbols-outlined">thumb_up</span></button>
+              <span class="material-symbols-outlined">swap_horiz</span>
+              <button class="feedback-btn" id="search-deslike-button"><span class="material-symbols-outlined">thumb_down</span></button>
+            </div>
+          </div>
       `;
         cardSearch.appendChild(card);
 

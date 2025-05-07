@@ -1,4 +1,17 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
+  const movies = await fetchData('/the-cult-club-lite/json/movies.json');
+  const series = await fetchData('/the-cult-club-lite/json/series.json');
+  const animes = await fetchData('/the-cult-club-lite/json/animes.json');
+
+  async function fetchData(url) {
+    try {
+      const response = await fetch(url);
+      return await response.json();
+    } catch (error) {
+      return [];
+    }
+  }
+
   let previousFeedbackCardsDatas =
     JSON.parse(localStorage.getItem('previousFeedbackCardsDatas')) || [];
 
@@ -202,6 +215,140 @@ document.addEventListener('DOMContentLoaded', function () {
     'hated-container',
     'hated'
   );
+
+  function determineMediaType(title) {
+    if (movies.some((movie) => movie.title === title)) return 'MOVIES';
+    if (series.some((serie) => serie.title === title)) return 'SERIES';
+    if (animes.some((anime) => anime.title === title)) return 'ANIMES';
+    return;
+  }
+
+  function SearchFeedbackButtons() {
+    document.addEventListener('click', function (event) {
+      const likeButton = event.target.closest('#search-like-button');
+      const dislikeButton = event.target.closest('#search-deslike-button');
+      if (!likeButton && !dislikeButton) return;
+
+      const cardSearchInner = event.target.closest('.card-search-inner');
+      if (!cardSearchInner) return;
+
+      const cardPic = cardSearchInner.querySelector('.card-pic-search-inner');
+      if (!cardPic) return;
+
+      const name = cardSearchInner.querySelector('.name');
+
+      if (!cardPic || !name) return;
+
+      const backgroundImageMatch = cardPic.style.backgroundImage.match(
+        /url\(["']?(.*?)["']?\)/
+      );
+      const backgroundImage = backgroundImageMatch
+        ? backgroundImageMatch[1]
+        : '';
+      const title = name.childNodes[0].textContent.trim();
+
+      const type = determineMediaType(title);
+      const feedbackType = likeButton ? 'liked' : 'hated';
+      const containerId = likeButton ? 'liked-container' : 'hated-container';
+
+      let feedbackCardData = {
+        image: backgroundImage,
+        title: title,
+        type: type,
+        feedbackType: feedbackType,
+      };
+
+      const existingCardIndex = previousFeedbackCardsDatas.findIndex(
+        (item) =>
+          item.title === feedbackCardData.title &&
+          item.type === feedbackCardData.type &&
+          item.image === feedbackCardData.image
+      );
+
+      if (existingCardIndex !== -1) {
+        previousFeedbackCardsDatas[existingCardIndex].feedbackType =
+          feedbackType;
+
+        localStorage.setItem(
+          'previousFeedbackCardsDatas',
+          JSON.stringify(previousFeedbackCardsDatas)
+        );
+
+        renderAllFeedbackCards();
+      } else {
+        renderFeedbackCard(containerId, feedbackCardData);
+        previousFeedbackCardsDatas.push(feedbackCardData);
+        localStorage.setItem(
+          'previousFeedbackCardsDatas',
+          JSON.stringify(previousFeedbackCardsDatas)
+        );
+      }
+
+      if (likeButton) {
+        cardSearchInner.classList.remove('hated');
+        cardSearchInner.classList.add('liked');
+      } else {
+        cardSearchInner.classList.remove('liked');
+        cardSearchInner.classList.add('hated');
+      }
+
+      const mainCards = document.querySelectorAll(
+        '.card-movie, .card-serie, .card-anime'
+      );
+      mainCards.forEach((card) => {
+        const cardName = card
+          .querySelector('.name')
+          ?.childNodes[0]?.textContent?.trim();
+        const cardImageEl = card.querySelector(
+          '.card-pic-movie, .card-pic-serie, .card-pic-anime'
+        );
+        const cardImageMatch = cardImageEl?.style?.backgroundImage?.match(
+          /url\(["']?(.*?)["']?\)/
+        );
+        const cardImage = cardImageMatch ? cardImageMatch[1] : '';
+
+        if (cardName === title && cardImage === backgroundImage) {
+          if (likeButton) {
+            card.classList.remove('hated');
+            card.classList.add('liked');
+          } else {
+            card.classList.remove('liked');
+            card.classList.add('hated');
+          }
+        }
+      });
+
+      notification.style.backgroundColor =
+        feedbackType === 'liked' ? '#d1fae5' : '#fee2e2';
+      notification.style.borderLeft =
+        feedbackType === 'liked' ? '4px solid #22c55e' : '4px solid #ef4444';
+      notificationTitle.style.color =
+        feedbackType === 'liked' ? '#064e3b' : '#7f1d1d';
+      notificationIcon.style.color =
+        feedbackType === 'liked' ? '#22c55e' : '#ef4444';
+      notificationClose.style.color =
+        feedbackType === 'liked' ? '#064e3b' : '#7f1d1d';
+      notificationIcon.innerHTML =
+        feedbackType === 'liked'
+          ? '<i class="bi bi-hand-thumbs-up-fill"></i>'
+          : '<i class="bi bi-hand-thumbs-down-fill"></i>';
+      notificationTitle.innerText =
+        feedbackType === 'liked'
+          ? `Your card has been added to the "Liked It list".`
+          : `Your card has been added to the "Hated It list".`;
+
+      notification.classList.remove('notification-visible');
+      void notification.offsetWidth;
+      notification.classList.add('notification-visible');
+
+      clearTimeout(notification.hideTimeout);
+      notification.hideTimeout = setTimeout(() => {
+        notification.classList.remove('notification-visible');
+      }, 4000);
+    });
+  }
+
+  SearchFeedbackButtons();
 
   document.addEventListener('click', function (event) {
     const removeButton = event.target.closest('#remove-feedback-btn');

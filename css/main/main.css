@@ -240,6 +240,13 @@ h2 {
     pointer-events: all;
 }
 
+.card-search-inner .feedback-btns-container {
+    transition: all 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+    bottom: -5rem;
+}
+
 .notification {
     position: fixed;
     bottom: 5rem;
@@ -770,11 +777,13 @@ h2 {
     transition: 0.1s;
 }
 
-#like-button {
+#like-button,
+#search-like-button {
     background: var(--gradient-like);
 }
 
-#deslike-button {
+#deslike-button,
+#search-deslike-button {
     background: var(--gradient-deslike);
 }
 

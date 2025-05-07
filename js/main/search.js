@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               : ''
           }
           <a href="${item.imdbLink}" target="_blank">
-            <div class="imdb-rating">${`<span class="imdb-star"></span>`.repeat(
+            <div class="imdb-rating">${`<i class="bi bi-star-fill imdb-star"></i>`.repeat(
               Math.round(item.imdb)
             )}</div>
           </a>

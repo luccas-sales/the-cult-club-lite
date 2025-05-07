@@ -81,7 +81,7 @@
     }
 
     #remove-feedback-btn:hover .icon svg {
-        fill: var(--color-text-light);
+        fill: var(--color-light);
     }
 
     #remove-feedback-btn:active .icon svg {
@@ -90,11 +90,11 @@
     }
 
     #remove-feedback-btn:hover .text {
-        color: var(--color-text-light);
+        color: var(--color-light);
     }
 
     #remove-feedback-btn:hover {
-        background: var(--color-text-dark);
+        background: var(--color-light);
     }
 
     #remove-feedback-btn:active {
@@ -104,15 +104,13 @@
 
     .card-movie,
     .card-serie,
-    .card-anime,
-    .card-search-inner {
+    .card-anime {
         transition: none !important;
     }
 
     .card-movie:hover,
     .card-serie:hover,
-    .card-anime:hover,
-    .card-search-inner:hover {
+    .card-anime:hover {
         transform: none !important;
         transition: none !important;
         box-shadow: 0rem 0.5rem 1rem var(--shadow-light);

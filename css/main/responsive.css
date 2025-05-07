@@ -104,8 +104,20 @@
 
     .card-movie,
     .card-serie,
-    .card-anime {
+    .card-anime,
+    .card-search-inner {
         transition: none !important;
+    }
+
+    .selectedList .card-movie.liked,
+    .selectedList .card-serie.liked,
+    .selectedList .card-anime.liked,
+    .card-search-inner.liked,
+    .selectedList .card-movie.hated,
+    .selectedList .card-serie.hated,
+    .selectedList .card-anime.hated,
+    .card-search-inner.hated {
+        transition: all 0.3s ease !important;
     }
 
     .card-movie:hover,

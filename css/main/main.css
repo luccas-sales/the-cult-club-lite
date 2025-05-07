@@ -365,7 +365,6 @@ h2 {
 }
 
 /* Cards */
-/* Estilos base dos cards (mantendo os existentes) */
 .card-movie,
 .card-serie,
 .card-anime,
@@ -441,7 +440,6 @@ h2 {
     font-weight: bold;
 }
 
-/* Efeitos hover específicos para cada estado */
 .card-movie.liked:hover,
 .card-serie.liked:hover,
 .card-anime.liked:hover,

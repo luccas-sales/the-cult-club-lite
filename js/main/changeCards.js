@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async function () {
-  const movies = await fetchData('/the-cult-club-lite/json/movies.json');
-  const series = await fetchData('/the-cult-club-lite/json/series.json');
-  const animes = await fetchData('/the-cult-club-lite/json/animes.json');
+  const movies = await fetchData('/json/movies.json');
+  const series = await fetchData('/json/series.json');
+  const anime = await fetchData('/json/anime.json');
 
   async function fetchData(url) {
     try {
@@ -48,7 +48,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
 
       card.innerHTML = `
-      <div class="list-title"><h1>${type.toUpperCase()}S</h1></div>
+      <div class='list-title'>
+      <h1>${
+        type === 'anime' ? type.toUpperCase() : type.toUpperCase() + 'S'
+      }</h1>
+       </div>
       <div class="card-pic-${type}" style="background-image: url('${
         cardData.image
       }');">
@@ -124,5 +128,5 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   changeCards(movies, document.querySelector('.movies-list'), 'movie');
   changeCards(series, document.querySelector('.series-list'), 'serie');
-  changeCards(animes, document.querySelector('.animes-list'), 'anime');
+  changeCards(anime, document.querySelector('.anime-list'), 'anime');
 });

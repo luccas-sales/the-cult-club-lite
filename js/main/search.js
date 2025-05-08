@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async function () {
-  const movies = await fetchData('/the-cult-club-lite/json/movies.json');
-  const series = await fetchData('/the-cult-club-lite/json/series.json');
-  const animes = await fetchData('/the-cult-club-lite/json/animes.json');
+  const movies = await fetchData('/json/movies.json');
+  const series = await fetchData('/json/series.json');
+  const anime = await fetchData('/json/anime.json');
 
   async function fetchData(url) {
     try {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       searchSuggestions.style.visibility = 'hidden';
 
-      const allItems = [...movies, ...series, ...animes];
+      const allItems = [...movies, ...series, ...anime];
 
       const foundItem = allItems.some(
         (item) => normalizeText(item.title) === title
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   searchInput.addEventListener('input', function () {
     const title = normalizeText(searchInput.value);
 
-    const allItems = [...movies, ...series, ...animes];
+    const allItems = [...movies, ...series, ...anime];
 
     const matchingSuggestions = allItems.filter((suggestion) =>
       normalizeText(suggestion.title).startsWith(title)

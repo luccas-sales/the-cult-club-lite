@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async function () {
-  const movies = await fetchData('/the-cult-club-lite/json/movies.json');
-  const series = await fetchData('/the-cult-club-lite/json/series.json');
-  const animes = await fetchData('/the-cult-club-lite/json/animes.json');
+  const movies = await fetchData('/json/movies.json');
+  const series = await fetchData('/json/series.json');
+  const anime = await fetchData('/json/anime.json');
 
   async function fetchData(url) {
     try {
@@ -73,9 +73,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (!cardPic) return;
 
       const name = selectedCard?.querySelector('.name');
-      const typeEl = selectedCard?.querySelector('.list-title');
 
-      if (!selectedCard || !cardPic || !name || !typeEl) return;
+      if (!selectedCard || !cardPic || !name) return;
 
       const backgroundImageMatch = cardPic.style.backgroundImage.match(
         /url\(["']?(.*?)["']?\)/
@@ -83,8 +82,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       const backgroundImage = backgroundImageMatch
         ? backgroundImageMatch[1]
         : '';
+
       const title = name.childNodes[0].textContent.trim();
-      const type = typeEl.textContent.trim();
+      const type = determineMediaType(title);
 
       let feedbackCardData = {
         image: backgroundImage,
@@ -226,9 +226,9 @@ document.addEventListener('DOMContentLoaded', async function () {
   );
 
   function determineMediaType(title) {
-    if (movies.some((movie) => movie.title === title)) return 'MOVIES';
+    if (movies.some((movie) => movie.title === title)) return 'MOVIE';
     if (series.some((serie) => serie.title === title)) return 'SERIES';
-    if (animes.some((anime) => anime.title === title)) return 'ANIMES';
+    if (anime.some((anime) => anime.title === title)) return 'ANIME';
     return;
   }
 

@@ -43,7 +43,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     container.appendChild(card);
 
     void card.offsetWidth;
-    card.classList.add('show');
+
+    const cardsInContainer = container.querySelectorAll('.card-feedback');
+    const index = Array.from(cardsInContainer).indexOf(card);
+
+    setTimeout(() => {
+      card.classList.add('show');
+    }, 100 * (index + 1));
   }
 
   function feedbackButton(
@@ -161,13 +167,16 @@ document.addEventListener('DOMContentLoaded', async function () {
     likedContainer.innerHTML = '';
     hatedContainer.innerHTML = '';
 
-    for (const feedbackCardInfo of previousFeedbackCardsDatas) {
+    previousFeedbackCardsDatas.forEach((feedbackCardInfo, index) => {
       const containerId =
         feedbackCardInfo.feedbackType === 'hated'
           ? 'hated-container'
           : 'liked-container';
-      renderFeedbackCard(containerId, feedbackCardInfo);
-    }
+
+      setTimeout(() => {
+        renderFeedbackCard(containerId, feedbackCardInfo);
+      }, 100 * index);
+    });
   }
 
   renderAllFeedbackCards();

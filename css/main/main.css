@@ -91,13 +91,13 @@ h2 {
 .search-container.hidden {
     opacity: 0;
     transform: translateY(-2rem);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 .search-container.show {
     opacity: 1;
     transform: translateY(0);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 .input-wrapper {
@@ -119,7 +119,7 @@ h2 {
     border: 0.2rem solid transparent;
     border-top-left-radius: 0.7rem;
     border-bottom-left-radius: 0.7rem;
-    transition: all .2s ease;
+    transition: border 0.5s ease, background-color 0.5s ease;
 }
 
 .input:hover {
@@ -184,7 +184,6 @@ h2 {
 }
 
 /* Card Search */
-
 #search {
     display: flex;
     justify-content: center;
@@ -219,16 +218,17 @@ h2 {
     pointer-events: all;
     z-index: 10;
     user-select: none;
+    transform: scale(0.9);
 }
 
 .card-search-inner {
     opacity: 0;
-    transition: all 3s ease;
+    transition: opacity 3s ease;
 }
 
 .card-search-inner.show {
     opacity: 1;
-    transition: all 1s ease;
+    transition: opacity 1s ease;
 }
 
 .card-search .card-search-inner:hover {
@@ -266,7 +266,7 @@ h2 {
 
 .notification-visible {
     opacity: 1;
-    transition: all 1s ease;
+    transition: opacity 1s ease, visibility 1s ease;
     visibility: visible;
     animation: fadeOut 1s ease forwards;
     animation-delay: 3s;
@@ -308,22 +308,22 @@ h2 {
 #slider.hidden {
     opacity: 0;
     transform: scale(0.45);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 #slider.show {
     opacity: 1;
     transform: scale(0.5);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 .list {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: filter 0.5s ease;
     opacity: 0.5;
     filter: blur(0.2rem);
+    transition: filter 0.5s ease, opacity 0.5s ease;
     min-width: 35rem;
     height: 55rem;
     border-radius: 1.0rem;
@@ -359,7 +359,7 @@ h2 {
 }
 
 .selectedList .list-title {
-    transition: all 0.5s ease;
+    transition: opacity 0.5s ease, top 0.5s ease, visibility 0.5s ease;
     visibility: visible;
     top: -6rem;
 }
@@ -381,7 +381,7 @@ h2 {
     background-color: var(--color-accent);
     box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
     border-radius: 2rem;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-movie:hover,
@@ -398,6 +398,7 @@ h2 {
 .card-search-inner.liked {
     background-color: var(--liked-light);
     box-shadow: 0 0.5rem 1rem rgba(34, 197, 94, 0.2);
+    transition: transform 0.3s ease, background-color 1s ease, box-shadow 1s ease;
 }
 
 .card-movie.liked::after,
@@ -414,6 +415,7 @@ h2 {
     border-radius: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
+    transition: background-color 1s ease, content 1s ease;
 }
 
 .card-movie.hated,
@@ -422,6 +424,7 @@ h2 {
 .card-search-inner.hated {
     background-color: var(--hated-light);
     box-shadow: 0 0.5rem 1rem rgba(239, 68, 68, 0.2);
+    transition: transform 0.3s ease, background-color 1s ease, box-shadow 1s ease;
 }
 
 .card-movie.hated::after,
@@ -438,6 +441,7 @@ h2 {
     border-radius: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
+    transition: background-color 1s ease, content 1s ease;
 }
 
 .card-movie.liked:hover,
@@ -667,7 +671,7 @@ h2 {
     font-size: 1.5rem;
     color: var(--color-dark);
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .card-movie .imdb-star:hover,
@@ -691,20 +695,20 @@ h2 {
 #btn-navegation-left.hidden {
     opacity: 0;
     transform: translateX(-1rem);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 #btn-navegation-right.hidden {
     opacity: 0;
     transform: translateX(1rem);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 #btn-navegation-left.show,
 #btn-navegation-right.show {
     opacity: 1;
     transform: translateX(0);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 #btn-navegation-left,
@@ -734,7 +738,7 @@ h2 {
 }
 
 .selectedList .feedback-btns-container {
-    transition: all 0.5s ease;
+    transition: opacity 0.5s ease, visibility 0.5s ease, bottom 0.5s ease;
     opacity: 1;
     visibility: visible;
     bottom: -5rem;
@@ -772,7 +776,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.1s;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 #like-button,
@@ -800,7 +804,7 @@ h2 {
     border-radius: 3.5rem;
     z-index: -1;
     border: 0rem solid rgba(255, 255, 255, 0.411);
-    transition: 0.4s;
+    transition: width 0.5s ease, height 0.5s ease, border 0.5s ease;
 }
 
 .feedback-btn:hover::before {
@@ -841,20 +845,20 @@ h2 {
 .liked-section.hidden {
     opacity: 0;
     transform: translateX(-5rem);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 .hated-section.hidden {
     opacity: 0;
     transform: translateX(5rem);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 .liked-section.show,
 .hated-section.show {
     opacity: 1;
     transform: translateX(0);
-    transition: all 3s ease;
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 .liked-list-feedback-title,
@@ -911,15 +915,16 @@ h2 {
     padding: 1rem;
     width: 15rem;
     height: 20rem;
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
     opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .card-feedback.show {
     opacity: 1;
-    transition: all 0.3s ease;
+    transform: scale(1);
 }
 
 .card-feedback h3 {
@@ -940,23 +945,23 @@ h2 {
 #liked-container .card-feedback {
     background-color: var(--liked-light);
     box-shadow: 0 0.2rem 0.5rem rgba(34, 197, 94, 0.1);
+    transition: opacity 1s ease, transform 0.3s ease, background-color 1s ease, box-shadow 1s ease;
 }
 
 #liked-container .card-feedback:hover {
     box-shadow: 0 0.5rem 1rem rgba(34, 197, 94, 0.2);
     transform: scale(1.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #hated-container .card-feedback {
     background-color: var(--hated-light);
     box-shadow: 0 0.2rem 0.5rem rgba(239, 68, 68, 0.1);
+    transition: opacity 1s ease, transform 0.3s ease, background-color 1s ease, box-shadow 1s ease;
 }
 
 #hated-container .card-feedback:hover {
     box-shadow: 0 0.5rem 1rem rgba(239, 68, 68, 0.2);
     transform: scale(1.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-pic-feedback {
@@ -967,9 +972,7 @@ h2 {
     background-repeat: no-repeat;
     align-self: center;
     border-radius: 0.5rem;
-    transition: all 0.3s ease;
     position: relative;
-    z-index: 1;
 }
 
 .card-feedback::after {
@@ -1019,7 +1022,7 @@ h2 {
 
 #remove-feedback-btn,
 #remove-feedback-btn span {
-    transition: 200ms;
+    transition: all 0.3s ease;
 }
 
 #remove-feedback-btn .text {

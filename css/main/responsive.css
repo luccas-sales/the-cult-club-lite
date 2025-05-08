@@ -102,29 +102,10 @@
         opacity: 0.8;
     }
 
-    .card-movie,
-    .card-serie,
-    .card-anime,
-    .card-search-inner {
-        transition: none !important;
-    }
-
-    .selectedList .card-movie.liked,
-    .selectedList .card-serie.liked,
-    .selectedList .card-anime.liked,
-    .card-search-inner.liked,
-    .selectedList .card-movie.hated,
-    .selectedList .card-serie.hated,
-    .selectedList .card-anime.hated,
-    .card-search-inner.hated {
-        transition: all 0.3s ease !important;
-    }
-
     .card-movie:hover,
     .card-serie:hover,
     .card-anime:hover {
         transform: none !important;
-        transition: none !important;
         box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
     }
 
@@ -151,19 +132,10 @@
         height: 4rem !important;
     }
 
-    .card-feedback {
-        transition: none !important;
-    }
-
     .card-feedback:hover {
         transform: none !important;
         transition: none !important;
         box-shadow: 0rem 0.5rem 1rem var(--shadow-light);
-    }
-
-    #remove-feedback-btn,
-    #remove-feedback-btn span {
-        transition: none !important;
     }
 
 }
@@ -171,6 +143,10 @@
 @media(max-width: 480px) {
     .search-container {
         width: 30rem;
+    }
+
+    .input {
+        font-size: 1.2rem;
     }
 
     .notification {
@@ -188,13 +164,11 @@
     #slider.hidden {
         opacity: 0;
         transform: scale(0.30);
-        transition: all 3s ease;
     }
 
     #slider.show {
         opacity: 1;
         transform: scale(0.35);
-        transition: all 3s ease;
     }
 
     .btns-navegation {

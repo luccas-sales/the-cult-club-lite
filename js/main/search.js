@@ -149,6 +149,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     cardSearch.innerHTML = '';
   });
 
+  document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('card-pic-search-inner')) {
+      searchSection.style.visibility = 'hidden';
+      cardSearch.innerHTML = '';
+    }
+  });
+
   searchInput.addEventListener('input', function () {
     const title = normalizeText(searchInput.value);
 

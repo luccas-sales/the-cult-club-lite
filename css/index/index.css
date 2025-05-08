@@ -20,16 +20,18 @@ body {
 }
 
 main {
-    animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease;
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
+        transform: scale(0.95);
     }
 
     100% {
         opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -38,7 +40,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 h1 {
@@ -50,7 +52,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     white-space: nowrap;
 }
 
@@ -62,18 +64,18 @@ form {
 input {
     font-family: 'Montserrat', serif;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     border: 0;
     border-bottom: 0.1rem solid white;
     background: transparent;
-    width: 20rem;
+    width: 15rem;
     outline: none;
     padding-bottom: 0.2rem;
 }
 
 input::placeholder {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -86,7 +88,7 @@ input::placeholder {
 }
 
 .alert {
-    font-size: 1rem;
+    font-size: 0.8rem;
     position: absolute;
     color: red;
     font-weight: 600;

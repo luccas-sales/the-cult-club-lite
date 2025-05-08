@@ -389,14 +389,21 @@ document.addEventListener('DOMContentLoaded', async function () {
     allCards.forEach((card) => {
       const cardName = card
         .querySelector('.name')
-        .childNodes[0].textContent.trim();
-      const cardType = card.querySelector('.list-title').textContent.trim();
+        ?.childNodes[0]?.textContent?.trim();
       const cardPic = card.querySelector(
-        '.card-pic-movie, .card-pic-serie, .card-pic-anime'
+        '.card-pic-movie, .card-pic-serie, .card-pic-anime, .card-pic-search-inner'
       );
-      const cardImageStyle = cardPic.style.backgroundImage;
-      const cardImageMatch = cardImageStyle.match(/url\(["']?(.*?)["']?\)/);
+      const cardImageStyle = cardPic?.style?.backgroundImage;
+      const cardImageMatch = cardImageStyle?.match(/url\(["']?(.*?)["']?\)/);
       const cardImage = cardImageMatch ? cardImageMatch[1] : '';
+
+      let cardType;
+      if (card.classList.contains('card-movie')) cardType = 'MOVIE';
+      else if (card.classList.contains('card-serie')) cardType = 'SERIES';
+      else if (card.classList.contains('card-anime')) cardType = 'ANIME';
+      else if (card.classList.contains('card-search-inner')) {
+        cardType = determineMediaType(cardName);
+      }
 
       if (cardName === title && cardType === type && cardImage === image) {
         card.classList.remove('liked', 'hated');

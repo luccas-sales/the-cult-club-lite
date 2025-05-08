@@ -373,18 +373,21 @@ document.addEventListener('DOMContentLoaded', async function () {
     const imageMatch = imageStyle.match(/url\(["']?(.*?)["']?\)/);
     const image = imageMatch ? imageMatch[1] : '';
 
-    previousFeedbackCardsDatas = previousFeedbackCardsDatas.filter((item) => {
-      return !(
-        item.title === title &&
-        item.type === type &&
-        item.image === image
-      );
-    });
+    const removedItem = previousFeedbackCardsDatas.find(
+      (item) =>
+        item.title === title && item.type === type && item.image === image
+    );
+    const feedbackType = removedItem?.feedbackType;
+
+    previousFeedbackCardsDatas = previousFeedbackCardsDatas.filter(
+      (item) =>
+        !(item.title === title && item.type === type && item.image === image)
+    );
 
     cardFeedback.remove();
 
     const allCards = document.querySelectorAll(
-      '.card-movie, .card-serie, .card-anime'
+      '.card-movie, .card-serie, .card-anime, .card-search-inner'
     );
     allCards.forEach((card) => {
       const cardName = card
@@ -397,17 +400,35 @@ document.addEventListener('DOMContentLoaded', async function () {
       const cardImageMatch = cardImageStyle?.match(/url\(["']?(.*?)["']?\)/);
       const cardImage = cardImageMatch ? cardImageMatch[1] : '';
 
-      let cardType;
-      if (card.classList.contains('card-movie')) cardType = 'MOVIE';
-      else if (card.classList.contains('card-serie')) cardType = 'SERIES';
-      else if (card.classList.contains('card-anime')) cardType = 'ANIME';
-      else if (card.classList.contains('card-search-inner')) {
-        cardType = determineMediaType(cardName);
-      }
-
-      if (cardName === title && cardType === type && cardImage === image) {
+      if (cardName === title && cardImage === image) {
         card.classList.remove('liked', 'hated');
       }
+    });
+
+    notification.style.backgroundColor = '#f3f4f6';
+    notification.style.borderLeft = '4px solid #6b7280';
+    notificationTitle.style.color = '#1f2937';
+    notificationIcon.style.color = '#6b7280';
+    notificationClose.style.color = '#1f2937';
+    notificationIcon.innerHTML = '<i class="bi bi-dash-circle-fill"></i>';
+
+    notificationTitle.innerText =
+      feedbackType === 'liked'
+        ? `Your card has been removed from the "Liked It list".`
+        : `Your card has been removed from the "Hated It list".`;
+
+    notification.classList.remove('notification-visible');
+    void notification.offsetWidth;
+    notification.classList.add('notification-visible');
+
+    clearTimeout(notification.hideTimeout);
+    notification.hideTimeout = setTimeout(() => {
+      notification.classList.remove('notification-visible');
+    }, 4000);
+
+    notificationClose.addEventListener('click', function (event) {
+      notification.classList.remove('notification-visible');
+      clearTimeout(notification.hideTimeout);
     });
 
     localStorage.setItem(
